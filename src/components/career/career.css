@@ -1,5 +1,4 @@
-/* Outer gray border slow spin */
-@keyframes spinSlow {
+@keyframes orbit {
   0% {
     transform: rotate(0deg);
   }
@@ -8,28 +7,46 @@
   }
 }
 
-.custom-border {
-  animation: spinSlow 10s linear infinite;
-}
-
-/* Yellow dot rotates along border path */
-@keyframes orbit {
-  0% {
-    transform: rotate(0deg) translateY(-192px); /* 50% of 384px (w/h) */
-  }
-  100% {
-    transform: rotate(360deg) translateY(-192px);
-  }
-}
-
-.custom-dot {
-  animation: orbit 10s linear infinite;
-  transform-origin: center;
+.orbit-container {
   position: absolute;
-  top: 50%;
+  top: 10%;
+  left: 0%;
+  width: 340px; /* same size as gray border circle */
+  height: 420px;
+  margin-right: -80px; /* half of width */
+  margin-top: -80px;  /* half of height */
+  animation: orbit 5s linear infinite;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.orbit-dot {
+  position: absolute;
+  top: 0;
   left: 50%;
-  width: 16px;
-  height: 16px;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
   background-color: #facc15; /* yellow-400 */
   border-radius: 9999px;
+}
+
+@media (max-width:768px) and (min-width:300px) {
+  .orbit-container {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 200px; /* same size as gray border circle */
+  height: 320px;
+  margin-right: 200px; /* half of width */
+  margin-top: -80px;  /* half of height */
+  animation: orbit 5s linear infinite;
+  z-index: 20;
+  pointer-events: none;
+}
+}
+@media (max-width:1115px) and (min-width:769px) {
+  .orbit-container {
+  display: none;
+}
 }

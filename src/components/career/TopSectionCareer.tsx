@@ -28,7 +28,7 @@ const TopSectionCareer: React.FC = () => {
     <section className="min-h-screen flex items-center justify-center px-6 md:px-20 bg-white">
      
       <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl">
-        <div className="text-center md:text-left mb-8 md:mb-0 max-w-xl">
+        <div className="text-center md:text-left mb-8 md:mb-0 max-w-xl mt-10 sm:mt-0">
           <h1 className="text-4xl md:text-6xl font-bold">
             <span className="text-sky-400 transition-all duration-500">{texts[index]}</span>{' '}<br/>
             <span className="text-gray-600">your career</span>
@@ -38,28 +38,42 @@ const TopSectionCareer: React.FC = () => {
           </p>
         </div>
 
-        {/* <div className="relative w-72 h-72 md:w-96 md:h-96">
-          <div className="absolute top-[-20px] left-[-20px] w-full h-full border-2 border-gray-300 rounded-full animate-spin-slow  flex z-10" style={{ animationDuration: '10s' }}></div>
+        <div className="relative w-72 h-72 md:w-96 md:h-96">
+          {/* <div className="absolute top-[-20px] left-[-20px] w-full h-full border-2 border-gray-300 rounded-full animate-spin-slow  flex z-10 " style={{ animationDuration: '10s' }}></div>
 
-          <div className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-400 rounded-full animate-bounce-vert"></div>
+          <div className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-400 rounded-full animate-bounce-vert custom-dot"></div>
 
           <img
             src={images[index]}
             alt="career visual"
             className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl flex relative z-20"
+          /> */}
+         <div className="absolute top-[-20px] left-[-20px] w-full h-full border-2 border-gray-300 rounded-full animate-spin-slow flex z-10" style={{ animationDuration: '10s' }}></div>
+          
+          {/* Rotating yellow dot on top of gray circle */}
+          <div className="orbit-container">
+            <div className="orbit-dot"></div>
+          </div>
+          
+          <img
+            src={images[index]}
+            alt="career visual"
+            className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl flex relative z-30"
           />
-        </div> */}
-       <div className="relative w-72 h-72 md:w-96 md:h-96">
-  <div className="absolute top-[-20px] left-[-20px] w-full h-full border-2 border-gray-300 rounded-full custom-border z-10"></div>
 
-  <div className="custom-dot z-20"></div>
+
+        </div>
+       {/* <div className="relative w-72 h-72 md:w-96 md:h-96">
+  <div className="absolute top-[-20px] left-[-20px] w-full h-full border-2 border-gray-300 rounded-full custom-border z-10 custom-dot"></div>
+
+  
 
   <img
     src={images[index]}
     alt="career visual"
     className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl z-30"
   />
-</div>
+</div> */}
 
 
 

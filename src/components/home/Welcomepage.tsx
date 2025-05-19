@@ -3,24 +3,31 @@ const WelcomePage = () => {
   return (
     <main className="font-sans text-gray-700">
       {/* Welcome Section */}
-      <section className="py-16 px-4 md:px-20 bg-white">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">Welcome To NexifyDigital</h1>
-        <p className="text-lg md:text-xl max-w-8xl">
-          NexifyDigital is your trusted partner in all things web. As a premier web development company,
-          we provide custom website solutions tailored to your business needs, goals, and vision. Our team of experienced web developers
-          is committed to guiding you through your online transformation, turning business ideas into powerful web experiences.
-          With NexifyDigital, success is not just a destination, it’s a journey we take together.
-        </p>
-      </section>
+      <section className="px-4 md:px-20 py-16 bg-white">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+          {/* Left: Welcome Text */}
+          <div className="w-full md:w-1/2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Welcome To NexifyDigital</h1>
+            <p className="text-lg md:text-xl">
+              NexifyDigital is your trusted partner in all things web. As a premier web development company,
+              we provide custom website solutions tailored to your business needs, goals, and vision. Our team of experienced web developers
+              is committed to guiding you through your online transformation, turning business ideas into powerful web experiences.
+              With NexifyDigital, success is not just a destination, it’s a journey we take together.
+            </p>
+          </div>
 
-      {/* CTA Section */}
-      <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-20 py-12 bg-gray-50">
-        <div className="w-full md:w-1/2 mb-8 md:mb-0">
-          <img src="./imgs/conversation.webp" alt="Handshake" className="w-full max-w-sm mx-auto md:mx-0" />
-        </div>
-        <div className="w-full md:w-1/2 text-center md:text-left">
-          <p className="text-xl font-medium">Start Your <span className="text-[#273aa0] font-semibold">Personalized Web Journey Now!</span></p>
-          <button className="mt-4 px-6 py-2 bg-[#273aa0] text-white rounded hover:bg-[#273aa0] transition-all">Let's Talk</button>
+          {/* Right: Image + Button */}
+          <div className="w-full md:w-1/2 text-center md:text-left flex justify-center items-center">
+            <div>
+              <img src="./imgs/conversation.webp" alt="Handshake" className="w-full max-w-sm mx-auto md:mx-0 mb-6" />
+            <p className="text-xl font-medium">
+              Start Your <span className="text-[#273aa0] font-semibold">Personalized Web Journey Now!</span>
+            </p>
+            <button className="mt-4 px-6 py-2 bg-[#273aa0] text-white rounded hover:bg-[#273aa0] transition-all">
+              Let's Talk
+            </button>
+            </div>
+          </div>
         </div>
       </section>
 
