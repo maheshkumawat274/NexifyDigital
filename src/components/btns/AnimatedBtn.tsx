@@ -7,7 +7,7 @@ const AnimatedBtn = () => {
   <div
     className="relative px-2 sm:px-4 py-3 border-2 border-[#3647AD] text-[#3647AD] font-bold text-lg rounded-lg transform transition-all duration-300 group-hover:translate-y-1 group-hover:translate-x-1 shadow-[6px_6px_10px_rgba(0,0,0,0.6),-6px_-6px_10px_rgba(255,255,255,0.1)] group-hover:shadow-[8px_8px_15px_rgba(0,0,0,0.8),-8px_-8px_15px_rgba(255,255,255,0.15)]"
   >
-    Get a Free Consultation
+    <p className="text-white md:text-[#3647AD]">Get a Free Consultation</p>
   </div>
 
   <div

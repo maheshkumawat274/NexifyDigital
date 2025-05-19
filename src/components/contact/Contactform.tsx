@@ -35,19 +35,7 @@ const Contactform: React.FC = () => {
               required
             />
           </div>
-           <div className="flex flex-col gap-1">
-            <label className="text-sm" htmlFor="name">Company Name <span className="text-red-500">*</span></label>
-            <input
-              id="name"
-              type="text"
-              onInput={(e) => {
-                    e.currentTarget.value = e.currentTarget.value.replace(/[^A-Za-z\s]/g, "");
-                  }}
-
-              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-2 hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
-              required
-            />
-          </div>
+           
 
           <div className="flex flex-col gap-1">
             <label className="text-sm" htmlFor="email">Email Address <span className="text-red-500">*</span></label>

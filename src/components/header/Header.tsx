@@ -82,7 +82,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Navigation - Desktop */}
-        <nav className="hidden lg:flex gap-8 text-[18px]" aria-label="Primary Navigation">
+        <nav className="hidden md:flex gap-8 text-[12px] md:text-[18px]" aria-label="Primary Navigation">
           <ul className="flex gap-7 text-black">
             <li><Link className="hover:border-b-2 border-black" to="/">Home</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/about">About</Link></li>
@@ -93,14 +93,14 @@ const Header: React.FC = () => {
         </nav>
 
         {/* CTA Button - Desktop */}
-        <div className="hidden sm:block">
+        <div className="hidden lg:block">
           <div>
             <AnimatedBtn/>
           </div>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open Mobile Menu"
