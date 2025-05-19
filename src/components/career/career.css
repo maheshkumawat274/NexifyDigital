@@ -1,0 +1,35 @@
+/* Outer gray border slow spin */
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-border {
+  animation: spinSlow 10s linear infinite;
+}
+
+/* Yellow dot rotates along border path */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateY(-192px); /* 50% of 384px (w/h) */
+  }
+  100% {
+    transform: rotate(360deg) translateY(-192px);
+  }
+}
+
+.custom-dot {
+  animation: orbit 10s linear infinite;
+  transform-origin: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #facc15; /* yellow-400 */
+  border-radius: 9999px;
+}

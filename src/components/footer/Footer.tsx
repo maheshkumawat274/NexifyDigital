@@ -1,0 +1,79 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import SocialMediaIcons from "../contact/SocialMediaIcons";
+
+const Footer: React.FC = () => {
+  return (
+    <>
+     <section className="w-full bg-[#273aa0] py-4 px-2 pt-10 pb-10 flex items-center justify-center">
+        <div className="flex items-center text-white font-bold text-lg sm:text-4xl">
+          Need Help ? Chat with Expert Developers!
+          <a
+            href="https://wa.me/+916376228917"
+            className="ml-4 px-6 py-2 bg-white text-[#273aa0] rounded-full hover:scale-105 shadow transition font-bold"
+          >
+            WHATSAPP
+          </a>
+        </div>
+      </section>
+       <footer className="w-full bg-[#273aa0] text-white py-14 px-2 sm:px-14 flex flex-col md:flex-row justify-between items-start text-sm border-t border-[#12130f] gap-4">
+        <div className="mb-4 md:mb-0 md:w-1/3">
+          <h1 className="text-5xl lg-text-6xl md:text-4xl sm:text-5xl font-bold">NexifyDigital</h1>
+          <div className="py-14">
+            <SocialMediaIcons/>
+          </div>
+          <div className="text-lg sm:text-xl text-white">
+            With 5+ years of experience and 100+ clients, the instructor has helped many professionals and businesses achieve success in the IT and technology industry.
+          </div>
+        </div>
+        <div className="mb-4 md:mb-0 md:w-1/3 flex justify-start sm:justify-center">
+          <div>
+            <h1 className="font-bold mb-1 text-2xl sm:text-3xl">Usefull Links</h1>
+          <ul className="text-lg">
+            <li>
+              <Link to='/about'>
+                <a className="hover:underline">About</a>
+              </Link>
+            </li>
+            <li>
+              <Link to='/services'>
+                <a className="hover:underline">Services</a>
+              </Link>
+            </li>
+            <li>
+              <Link to='/career'>
+                <a className="hover:underline">Career</a>
+              </Link>
+            </li>
+            <li>
+              <Link to='/contact'>
+                <a className="hover:underline">Contact Us</a>
+              </Link>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div className="md:w-1/3">
+          <h1 className="font-bold mb-1 text-2xl sm:text-3xl">Contact</h1>
+          <div className="text-lg">
+          <div>Delhi , New Delhi 110020</div>
+          <div>+916376228917</div>
+          <div>contact@nexifydigita.in</div>
+          </div>
+        </div>
+      </footer>
+      <hr className="text-white"/>
+      <div className="font-bold text-xl py-14 text-center bg-[#273aa0] text-white px-2">
+        <span>
+          Designed with{" "}
+          <a href="https://maheshweb.online/" className="underline">
+            Creative mahesh
+          </a>{" "}
+          &copy; Copyright 2025 All Rights Reserved
+        </span>
+      </div>
+    </>
+  );
+};
+
+export default Footer;
