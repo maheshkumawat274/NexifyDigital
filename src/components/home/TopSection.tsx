@@ -71,18 +71,20 @@ function TopSection() {
   const [rotatingData, setRotatingData] = useState(rotatingContent);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      // Rotate the content+bg array
-      setRotatingData((prev) => {
-        const newData = [...prev];
-        const last = newData.pop();
+  const interval = setInterval(() => {
+    setRotatingData((prev) => {
+      const newData = [...prev];
+      const last = newData.pop();
+      if (last !== undefined) {
         newData.unshift(last);
-        return newData;
-      });
-    }, 2000);
+      }
+      return newData;
+    });
+  }, 2000);
 
-    return () => clearInterval(interval);
-  }, []);
+  return () => clearInterval(interval);
+}, []);
+
 
   // Flat data index tracker
   let index = 0;
