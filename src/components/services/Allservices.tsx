@@ -1,4 +1,3 @@
-import React from 'react';
 
 const IndustrySolutions = () => {
   // Industries data (same as your image)
