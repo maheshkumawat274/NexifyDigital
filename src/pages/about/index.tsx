@@ -5,12 +5,14 @@ import AboutTop from '../../components/about/AboutTop'
 import MissionVisionSection from '../../components/about/MissionVission'
 import OurValues from '../../components/about/OurValues'
 import CommunitySection from '../../components/home/CommunitySection'
+import JourneySection from '../../components/about/AboutUs'
 
 const AboutPage = () => {
   return (
     <>
      <Header/>
      <AboutTop/>
+     <JourneySection/>
      <MissionVisionSection/>
      <OurValues/>
      <CommunitySection/>

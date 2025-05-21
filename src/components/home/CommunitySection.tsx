@@ -31,15 +31,15 @@ const CommunitySection = () => {
           <div className="relative right-0 md:right-[250px] lg:right-[400px] top-[0px] md:top-[30px] lg:top-[120px] bg-white rounded-xl shadow-lg px-6 py-6 z-10 w-full sm:w-[400px] md:w-full">
             <div className="flex justify-between items-center gap-6 md:gap-0">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#3647AD]">50+</h3>
+                <h3 className="text-2xl font-bold text-[#3647AD]">250+</h3>
                 <p className="text-gray-600 mt-1">Happy Customers</p>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#3647AD]">70+</h3>
+                <h3 className="text-2xl font-bold text-[#3647AD]">300+</h3>
                 <p className="text-gray-600 mt-1">People</p>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#3647AD]">50+</h3>
+                <h3 className="text-2xl font-bold text-[#3647AD]">500+</h3>
                 <p className="text-gray-600 mt-1">Projects</p>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutTop: React.FC = () => {
+const CareerTop: React.FC = () => {
   return (
     <section
       className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden"
@@ -8,7 +8,7 @@ const AboutTop: React.FC = () => {
     >
       {/* Background Image */}
       <img
-        src="./imgs/about.jpg"
+        src="./imgs/career.jpg"
         alt="Company Office with Core Values"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />
@@ -19,11 +19,11 @@ const AboutTop: React.FC = () => {
       {/* Text Overlay */}
       <div className="absolute bottom-5 left-0 w-full z-20 text-center px-4">
         <h1 className="text-white text-2xl md:text-4xl font-semibold drop-shadow-lg">
-          Committed to Excellence Through Our Values.
+          Our reinvention starts with you.
         </h1>
       </div>
     </section>
   );
 };
 
-export default AboutTop;
+export default CareerTop;
