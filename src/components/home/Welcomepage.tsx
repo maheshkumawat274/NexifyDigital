@@ -23,9 +23,14 @@ const WelcomePage = () => {
             <p className="text-xl font-medium">
               Start Your <span className="text-[#273aa0] font-semibold">Personalized Web Journey Now!</span>
             </p>
+            <a
+            href="https://wa.me/916376228917" // replace with your WhatsApp number
+                        target="_blank"
+                        rel="noopener noreferrer" aria-label="WhatsApp">
             <button className="mt-4 px-6 py-2 bg-[#273aa0] text-white rounded hover:bg-[#273aa0] transition-all">
               Let's Talk
             </button>
+            </a>
             </div>
           </div>
         </div>

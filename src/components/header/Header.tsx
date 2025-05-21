@@ -52,14 +52,17 @@ const Header: React.FC = () => {
         <nav aria-label="Social Media Links" className="flex space-x-4 text-[#3647AD]">
           <a href="https://www.facebook.com/profile.php?id=61575985723004" aria-label="Facebook"><FaFacebookF /></a>
           <a href="https://www.instagram.com/nexifydigital.in/" aria-label="Instagram"><FaInstagram /></a>
-          <a href="https://www.linkedin.com/company/107269127/" aria-label="LinkedIn"><FaLinkedinIn /></a>
+          <a href="https://www.linkedin.com/company/nexifydigital-solutions/" aria-label="LinkedIn"><FaLinkedinIn /></a>
           <a href="#" aria-label="YouTube"><FaYoutube /></a>
           <a href="https://x.com/NexifyD" aria-label="Twitter"><FaTwitter /></a>
           <a href="https://www.threads.com/@nexifydigital.in" aria-label="Threads"><SiThreads /></a>
           <a href="#" aria-label="Quora"><SiQuora /></a>
           <a href="#" aria-label="Pinterest"><FaPinterest /></a>
           <a href="#" aria-label="Telegram"><FaTelegramPlane /></a>
-          <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
+          <a 
+          href="https://wa.me/916376228917" // replace with your WhatsApp number
+            target="_blank"
+            rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
         </nav>
       </div>
 

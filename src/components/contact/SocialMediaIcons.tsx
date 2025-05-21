@@ -27,7 +27,7 @@ const SocialMediaIcons = () => {
       {/* X (Twitter) */}
       <div className="social-button">
         <a
-        href="https://x.com/therohitprashar"
+        href="https://x.com/NexifyD"
         target="_blank"
         rel="noopener noreferrer">
         <button className="relative w-12 h-12 cursor-pointer rounded-full group">
@@ -74,9 +74,9 @@ const SocialMediaIcons = () => {
       {/* WhatsApp */}
       <div className="social-button">
         <a
-        href="https://whatsapp.com/channel/0029Va9ciRxIHphDsqDdFM3r"
-        target="_blank"
-        rel="noopener noreferrer">
+        href="https://wa.me/916376228917" // replace with your WhatsApp number
+            target="_blank"
+            rel="noopener noreferrer">
         <button className="relative w-12 h-12 cursor-pointer rounded-full group">
           <div className="floater w-full h-full absolute top-0 left-0 bg-green-500 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"></div>
           <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-green-500 rounded-full">
