@@ -39,15 +39,7 @@ const TopSectionCareer: React.FC = () => {
         </div>
 
         <div className="relative w-72 h-72 md:w-96 md:h-96">
-          {/* <div className="absolute top-[-20px] left-[-20px] w-full h-full border-2 border-gray-300 rounded-full animate-spin-slow  flex z-10 " style={{ animationDuration: '10s' }}></div>
-
-          <div className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-400 rounded-full animate-bounce-vert custom-dot"></div>
-
-          <img
-            src={images[index]}
-            alt="career visual"
-            className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl flex relative z-20"
-          /> */}
+         
          <div className="absolute top-[-20px] left-[-20px] w-full h-full border-2 border-gray-300 rounded-full animate-spin-slow flex z-10" style={{ animationDuration: '10s' }}></div>
           
           {/* Rotating yellow dot on top of gray circle */}

@@ -92,8 +92,8 @@ function TopSection() {
   return (
     <div className="min-h-screen w-full px-2 bg-[#273aa0] font-sans relative overflow-x-hidden ">
       <div className="max-w-[1560px] mx-auto px-0 flex flex-col md:flex-row items-center justify-center h-screen">
-        <div className="flex-1 flex flex-col items-start justify-center h-full px-3 md:px-12 text-center md:text-left min-w-[260px]">
-          <h1 className="text-white font-extrabold leading-tight mb-7 font-poppins tracking-tighter pt-42 sm:pt-0 text-2xl sm:text-4xl md:text-5xl 2xl:text-7xl">
+        <div className="flex-1 flex flex-col items-start justify-center h-full px-3 md:px-12 md:text-left min-w-[260px]">
+          <h1 className="text-white font-bold leading-tight mb-7 font-poppins tracking-tighter pt-56 md:pt-0 text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl">
             Driving Success<br />
             Through Expert<br />
             IT Consulting Services

@@ -14,7 +14,7 @@ const CommunitySection = () => {
           <img
             src='./imgs/About-Us-Community-Section.png'
             alt="Team"
-            className="w-[300px] md:w-[350px] object-contain relative sm:top-4 z-10"
+            className="w-[300px] md:w-[350px] object-contain relative top-4 md:top-4 z-10"
           />
         </div>
 

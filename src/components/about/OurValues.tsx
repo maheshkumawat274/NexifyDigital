@@ -15,7 +15,7 @@ const values = [
 
 const OurValues = () => {
   return (
-    <section className="py-16 px-4 md:px-10 bg-white" id="our-values">
+    <section className="py-8 px-4 md:px-10 bg-white" id="our-values">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-700 mb-4">Our Values</h2>
         <p className="text-gray-700 max-w-3xl mx-auto mb-10">

@@ -41,7 +41,7 @@
   margin-right: 200px; /* half of width */
   margin-top: -80px;  /* half of height */
   animation: orbit 5s linear infinite;
-  z-index: 20;
+  z-index: 0;
   pointer-events: none;
 }
 }

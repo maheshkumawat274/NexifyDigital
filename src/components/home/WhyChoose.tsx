@@ -25,7 +25,7 @@ const WhyChoose = () => {
   }, [features.length]);
 
   return (
-    <section className="py-12 bg-white text-gray-700 px-4">
+    <section className="py-12 sm:py-0 bg-white text-gray-700 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Title + Description (EXACT match) */}
         <h1 className="text-3xl md:text-4xl font-bold  text-center mb-6">

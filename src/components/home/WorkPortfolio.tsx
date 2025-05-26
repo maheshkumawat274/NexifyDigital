@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const projects = [
   {
     title: 'E-Commerce Website Development',
-    description: 'We build fully functional e-commerce websites with features like product filtering, comparison tools, cart & checkout system, payment gateway integration, and user account management — suitable for electronics, fashion, grocery, multi-vendor platforms, and more.',
+    description: 'We develop e-commerce websites with filtering, comparison, cart, payments, and user accounts—ideal for fashion, electronics, grocery, and multi-vendor stores.',
     image: './imgs/portfolio1.jpg',
     stats: [
       { value: '3.2s', label: 'Avg Load Time' },
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: 'Mobile Application Development',
-    description: 'Specialized in building cross-platform mobile applications including e-commerce apps, business management tools, community platforms, health/fitness trackers, educational apps, IoT controllers, and custom enterprise solutions with features like real-time sync, offline mode, and secure payments.',
+    description: 'Skilled in cross-platform app development: e-commerce, fitness, education, IoT, community apps with real-time sync, offline mode, and secure payments.',
     image: './imgs/Importance-of-mobile-apps.jpg',
     stats: [
       { value: '100%', label: 'Custom Solutions' },
@@ -47,7 +47,7 @@ const projects = [
   },
   {
     title: 'Gaming Application Development',
-    description: 'Expertise in developing 2D/3D games across genres - casual puzzles, RPGs, strategy games, simulation games, and AR/VR experiences with features like multiplayer support, in-app purchases, leaderboards, and cross-platform compatibility.',
+    description: 'Experienced in 2D/3D game development including Ludo, Color Trading, and casual apps with multiplayer, in-app purchases, and cross-platform support.',
     image: './imgs/1717049768-2991.webp', 
     stats: [
       { value: 'Engaging', label: 'Game Mechanics' },
@@ -97,9 +97,9 @@ const PortfolioSection = () => {
   };
 
   return (
-    <section className="portfolio-section min-h-screen relative px-2 bg-white text-gray-700 py-12">
+    <section className="portfolio-section min-h-screen relative px-2 bg-white text-gray-700">
       <div className="pt-12 bg-white z-10">
-        <h1 className="text-4xl font-bold text-center mb-4">Work Portfolio</h1>
+        <h1 className="text-4xl font-bold text-center mb-4">What We Do</h1>
         <p className="text-lg max-w-3xl mx-auto text-center">
           👉 Explore our diverse portfolio at NexifyDigital to see how we deliver innovative and scalable IT solutions across industries.
         </p>

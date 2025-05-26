@@ -4,7 +4,7 @@ import React from 'react';
 const Contactform: React.FC = () => {
   return (
     
-    <section className='min-h-screen  py-14'>
+    <section className='min-h-screen  py-8'>
       <h1 className="text-[50px] sm:text-[70px] mx-[20px] sm:[100px] lg:mx-[270px] font-bold leading-none text-gray-700">CONTACT</h1>
       <div className="  text-gray-700 flex flex-col px-6 py-12 justify-center items-center">
         

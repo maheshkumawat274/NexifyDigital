@@ -6,7 +6,7 @@ const PricingInfo: React.FC = () => {
     <section className="bg-white py-12 px-6 md:px-20 lg:px-36 text-gray-800" id="pricing-info">
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">Transparent & Flexible Pricing</h2>
-        <div className="w-24 h-1 bg-orange-500 mx-auto mb-4"></div>
+        <div className="w-24 h-1 bg-[#3647AD] mx-auto mb-4"></div>
         <p className="text-lg text-gray-600">
           At NexifyDigital, we believe every project is unique. Instead of fixed prices,
           we offer customized pricing based on your specific requirements, features, and timelines.
@@ -28,7 +28,7 @@ const PricingInfo: React.FC = () => {
         <div className="flex justify-center mt-6 gap-6">
           <a
             href="tel:+916376228917" // replace with your actual number
-            className="flex items-center gap-2 px-5 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-md transition duration-300"
+            className="flex items-center gap-2 px-5 py-3 bg-[#3647AD] hover:bg-[#3648adde] text-white rounded-full shadow-md transition duration-300"
           >
             <FaPhoneAlt />
             Call Now
