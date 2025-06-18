@@ -11,6 +11,7 @@ import {
   FaTelegramPlane,
   FaWhatsapp
 } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
 import { SiQuora, SiThreads } from "react-icons/si";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
@@ -116,18 +117,18 @@ const Header: React.FC = () => {
 
       {/* --- Mobile Menu Drawer --- */}
       <aside
-        className={`fixed top-0 left-0 z-40 h-full w-3/4 max-w-xs bg-[#3647AD] text-white transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 z-40 h-full w-3/4 max-w-xs bg-white text-black transform transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Mobile Navigation Menu"
       >
         {/* Close Button */}
         <div className="flex justify-between items-center px-4 py-4 border-b border-white/20">
-          <h2 className="text-2xl font-bold">NexifyDigital</h2>
+          <h2 className="text-2xl font-bold text-[#3647AD]">NexifyDigital</h2>
           <button
             onClick={() => setIsMenuOpen(false)}
             aria-label="Close Mobile Menu"
-            className="text-white text-3xl"
+            className="text-black text-3xl"
           >
             <IoClose />
           </button>
@@ -135,11 +136,41 @@ const Header: React.FC = () => {
 
         {/* Mobile Nav Items */}
         <nav className="flex flex-col gap-4 px-6 py-6 font-medium text-lg">
-          <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-          <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
-          <Link to="/career" onClick={() => setIsMenuOpen(false)}>Career</Link>
-          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+          
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+           <div className="flex justify-between items-center gap-6">
+              <p>Home</p>
+              <FiArrowRight />
+           </div>
+          </Link>
+    
+          <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+            <div className="flex justify-between items-center gap-6">
+              <p>About Us</p>
+              <FiArrowRight />
+            </div>
+          </Link>
+    
+          <Link to="/services" onClick={() => setIsMenuOpen(false)}>
+            <div className="flex justify-between items-center gap-6">
+              <p>Services</p>
+              <FiArrowRight />
+            </div>
+          </Link>
+    
+          <Link to="/career" onClick={() => setIsMenuOpen(false)}>
+            <div className="flex justify-between items-center gap-6">
+              <p>Career</p>
+              <FiArrowRight />
+            </div>
+          </Link>
+    
+          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+            <div className="flex justify-between items-center gap-6">
+              <p>Contact Us</p>
+              <FiArrowRight />
+            </div>
+          </Link>
          <div>
            <AnimatedBtn/>
          </div>
