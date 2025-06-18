@@ -88,10 +88,10 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex gap-8 text-[12px] md:text-[18px]" aria-label="Primary Navigation">
           <ul className="flex gap-7 text-black">
             <li><Link className="hover:border-b-2 border-black" to="/">Home</Link></li>
-            <li><Link className="hover:border-b-2 border-black" to="/about">About</Link></li>
+            <li><Link className="hover:border-b-2 border-black" to="/about">About Us</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/services">Services</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/career">Career</Link></li>
-            <li><Link className="hover:border-b-2 border-black" to="/contact">Contact</Link></li>
+            <li><Link className="hover:border-b-2 border-black" to="/contact">Contact Us</Link></li>
           </ul>
         </nav>
 
@@ -136,10 +136,10 @@ const Header: React.FC = () => {
         {/* Mobile Nav Items */}
         <nav className="flex flex-col gap-4 px-6 py-6 font-medium text-lg">
           <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+          <Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
           <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
           <Link to="/career" onClick={() => setIsMenuOpen(false)}>Career</Link>
-          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
          <div>
            <AnimatedBtn/>
          </div>

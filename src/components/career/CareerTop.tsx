@@ -1,29 +1,25 @@
+
+
 import React from 'react';
 
-const CareerTop: React.FC = () => {
+const  CareerTop: React.FC = () => {
+  
   return (
-    <section
-      className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden"
-      aria-label="Our Company Values"
-    >
-      {/* Background Image */}
-      <img
-        src="./imgs/career.jpg"
-        alt="Company Office with Core Values"
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      />
-
-      {/* Gradient Overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#3647AD] via-transparent to-transparent z-10" />
-
-      {/* Text Overlay */}
-      <div className="absolute bottom-5 left-0 w-full z-20 text-center px-4">
-        <h1 className="text-white text-2xl md:text-4xl font-semibold drop-shadow-lg">
-          Our reinvention starts with you.
-        </h1>
+    <section className="relative w-full h-[50vh] md:h-[70vh] bg-cover bg-center" style={{ backgroundImage: "url('/imgs/career.jpg')" }}>
+      {/* Overlay */}
+      {/* <div className="absolute inset-0 bg-black opacity-20"></div> */}
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#3647AD] via-transparent to-transparent" />
+      {/* Content */}
+      <div className="relative z-10 flex justify-center items-end h-full px-2 md:px-16 text-white">
+        <div className="text-center mb-4">
+          <h1 className="text-white text-2xl md:text-4xl font-semibold drop-shadow-lg">
+            Our reinvention starts with you.
+         </h1>
+          
+        </div>
       </div>
     </section>
   );
 };
 
-export default CareerTop;
+export default  CareerTop;

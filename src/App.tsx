@@ -6,7 +6,7 @@ import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact";
 import CareerPage from "./pages/career";
 import ScrollTop from "./components/ScrollTop";
-import Websiteicons from "./components/Websiteicons";
+// import Websiteicons from "./components/Websiteicons";
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
         <Route path="/career" element={<CareerPage/>}/>
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-      <div className="fixed bottom-60 right-0 z-50">
+      {/* <div className="fixed bottom-60 right-0 z-50">
         <Websiteicons/>
-      </div>
+      </div> */}
     </Router>
   );
 }
