@@ -32,22 +32,22 @@ const Footer: React.FC = () => {
           <ul className="text-lg">
             <li>
               <Link to='/about'>
-                <a className="hover:underline">About Us</a>
+                <p className="hover:underline">About Us</p>
               </Link>
             </li>
             <li>
               <Link to='/services'>
-                <a className="hover:underline">Services</a>
+                <p className="hover:underline">Services</p>
               </Link>
             </li>
             <li>
               <Link to='/career'>
-                <a className="hover:underline">Career</a>
+                <p className="hover:underline">Career</p>
               </Link>
             </li>
             <li>
               <Link to='/contact'>
-                <a className="hover:underline">Contact Us</a>
+                <p className="hover:underline">Contact Us</p>
               </Link>
             </li>
           </ul>
