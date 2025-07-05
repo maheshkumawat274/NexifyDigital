@@ -54,11 +54,11 @@ const Header: React.FC = () => {
           <a href="https://www.facebook.com/profile.php?id=61575985723004" aria-label="Facebook"><FaFacebookF /></a>
           <a href="https://www.instagram.com/nexifydigital.in/" aria-label="Instagram"><FaInstagram /></a>
           <a href="https://www.linkedin.com/company/nexifydigital-solutions/" aria-label="LinkedIn"><FaLinkedinIn /></a>
-          <a href="#" aria-label="YouTube"><FaYoutube /></a>
+          <a href="https://www.youtube.com/@NexifyDigital-78" aria-label="YouTube"><FaYoutube /></a>
           <a href="https://x.com/NexifyD" aria-label="Twitter"><FaTwitter /></a>
           <a href="https://www.threads.com/@nexifydigital.in" aria-label="Threads"><SiThreads /></a>
           <a href="#" aria-label="Quora"><SiQuora /></a>
-          <a href="#" aria-label="Pinterest"><FaPinterest /></a>
+          <a href="https://in.pinterest.com/nexifyd" aria-label="Pinterest"><FaPinterest /></a>
           <a href="#" aria-label="Telegram"><FaTelegramPlane /></a>
           <a 
           href="https://wa.me/916376228917" // replace with your WhatsApp number
@@ -73,17 +73,25 @@ const Header: React.FC = () => {
           isScrolled ? "fixed top-0 w-full z-20" : ""
         }`}
       >
-        {/* Logo */}
-        <div className="flex items-center gap-3">
+        {/* <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2" aria-label="Nexify Digital Home">
             <img
-              src="/imgs/img.png"
+              src="/imgs/logo11.png"
               alt="Nexify Digital Logo"
-              className="h-12 w-12 rounded-full"
+              className="w-20 h-20 object-contain bg-amber-300"
             />
-            <span className="text-[#3647AD] font-bold text-xl">NexifyDigital</span>
+          </Link>
+        </div> */}
+        <div className="flex justify-center items-center gap-3 h-14 mt-2 w-48">
+          <Link to="/" className="flex items-center gap-2" aria-label="Nexify Digital Home">
+            <img 
+              src="/imgs/logo.png"
+              alt="Nexify Digital Logo"
+            />
+            <div></div>
           </Link>
         </div>
+
 
         {/* Navigation - Desktop */}
         <nav className="hidden md:flex gap-8 text-[12px] md:text-[18px]" aria-label="Primary Navigation">

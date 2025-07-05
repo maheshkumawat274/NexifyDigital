@@ -78,20 +78,6 @@ const services: ServiceData[] = [
     ],
   },
   {
-    title: 'Hi-Tech',
-    description:
-      'Stay ahead with advanced technology solutions designed for innovation-driven businesses. We offer AI, ML, IoT, and data science-based development services to support your digital transformation.',
-    items: [
-      'AI & Machine Learning Integration',
-      'IoT Application Development',
-      'Big Data Analytics',
-      'Blockchain Solutions',
-      'AR/VR Application Development',
-      'Robotic Process Automation (RPA)',
-      'Chatbot Development',
-    ],
-  },
-  {
     title: 'Online Marketing',
     description:
       'Grow your online presence and drive more traffic with our digital marketing services. We use proven strategies in SEO, social media, and content marketing to help your business reach its target audience effectively.',

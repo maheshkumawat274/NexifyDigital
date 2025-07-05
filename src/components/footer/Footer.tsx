@@ -56,9 +56,10 @@ const Footer: React.FC = () => {
         <div className="md:w-1/3">
           <h1 className="font-bold mb-1 text-2xl sm:text-3xl">Contact</h1>
           <div className="text-lg">
-          <div>Delhi , New Delhi 110020</div>
+          <div>Delhi, 110020</div>
           <div>+916376228917</div>
-          <div>contact@nexifydigita.in</div>
+          <div>contact@nexifydigital.in</div>
+          <div>nexifydigital78@gmail.com</div>
           </div>
         </div>
       </footer>

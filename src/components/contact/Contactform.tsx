@@ -67,14 +67,7 @@ const Contactform: React.FC = () => {
 </div>
 
 
-          <div className="flex flex-col gap-1">
-            <label className="text-sm" htmlFor="budget">Your Estimated Budget*</label>
-            <input
-              id="budget"
-              type="text"
-              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-2 hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
-            />
-          </div>
+         
 
           <div className="flex flex-col gap-1">
             <label className="text-sm" htmlFor="description">Description</label>
