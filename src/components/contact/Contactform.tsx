@@ -1,7 +1,61 @@
 
-import React from 'react';
-
+import React, { useState } from "react";
+import config from "../../../config";
 const Contactform: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Simple Validation
+    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+      setError("Please fill all required fields.");
+      return;
+    }
+
+    try {
+      const res = await fetch(`${config.API_BASE_URL}/submit_form.php`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        setSuccess(true);
+        setError("");
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+
+        setTimeout(() => setSuccess(false), 3000);
+      } else {
+        setError("Something went wrong. Try again later.");
+      }
+    } catch (err) {
+      console.error(err);
+      setError("Failed to connect to the server.");
+    }
+  };
+
   return (
     
     <section className='min-h-screen  py-8'>
@@ -18,15 +72,18 @@ const Contactform: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-semibold">
             I'd love to hear<br />from you!
           </h2>
+          {success && <p className="bg-green-100 text-green-800 p-2 mb-3 rounded">Your message has been sent ✅</p>}
+      {error && <p className="bg-red-100 text-red-800 p-2 mb-3 rounded">{error}</p>}
         </div>
 
         {/* Right Section - Form */}
-        <form className="flex flex-col gap-6 w-full md:w-1/2">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full md:w-1/2">
           <div className="flex flex-col gap-1">
             <label className="text-sm" htmlFor="name">Name <span className="text-red-500">*</span></label>
             <input
               id="name"
               type="text"
+              onChange={handleChange}
               onInput={(e) => {
                     e.currentTarget.value = e.currentTarget.value.replace(/[^A-Za-z\s]/g, "");
                   }}
@@ -42,6 +99,7 @@ const Contactform: React.FC = () => {
             <input
               id="email"
               type="email"
+              onChange={handleChange}
               className="bg-[#3647AD] text-white border-2 border-transparent hover:border-2 hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
               required
             />
@@ -56,6 +114,7 @@ const Contactform: React.FC = () => {
       type="tel"
       min="0"
       max="9999999999"
+      onChange={handleChange}
       onInput={(e) => {
                     e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, "");
                   }}
@@ -74,6 +133,7 @@ const Contactform: React.FC = () => {
             <textarea
               id="description"
               rows={5}
+              onChange={handleChange}
               className="bg-[#3647AD] text-white border-2 border-transparent hover:border-2 hover:border-[#3647AD] rounded-md px-4 py-3 outline-none resize-none"
             ></textarea>
           </div>

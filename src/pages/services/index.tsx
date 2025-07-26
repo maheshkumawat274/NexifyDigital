@@ -1,7 +1,7 @@
 import Footer from "../../components/footer/Footer"
 import Header from "../../components/header/Header"
-import ServicesHome from "../../components/home/ServicesHome"
 import IndustrySolutions from "../../components/services/Allservices"
+import MainServices from "../../components/services/MainServices"
 import PricingInfo from "../../components/services/PricingInfo"
 import ServicesTop from "../../components/services/ServicesTop"
 import { Helmet } from 'react-helmet'
@@ -30,8 +30,8 @@ const ServicesPage = () => {
 
     <Header/>
     <ServicesTop/>
+    <MainServices/>
     <IndustrySolutions/>
-    <ServicesHome/>
     <PricingInfo/>
     <Footer/>
     </>

@@ -66,11 +66,7 @@ const Footer: React.FC = () => {
       <hr className="text-white"/>
       <div className="font-bold text-xl py-14 text-center bg-[#273aa0] text-white px-2">
         <span>
-          Designed with{" "}
-          <a href="https://maheshweb.online/" className="underline">
-            Creative mahesh
-          </a>{" "}
-          &copy; Copyright 2025 All Rights Reserved
+          © 2025 Nexify Digital. All Rights Reserved.
         </span>
       </div>
     </>

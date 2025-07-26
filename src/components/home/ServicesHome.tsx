@@ -110,7 +110,7 @@ const ServicesHome: React.FC = () => {
           {services.map((service, index) => (
             <button
               key={index}
-              className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${
+              className={`px-4 py-2 rounded-lg cursor-pointer font-semibold text-sm md:text-base transition-all duration-200 ${
                 index === selectedIndex
                   ? 'bg-[#273aa0] text-white'
                   : 'bg-gray-100 text-black hover:bg-purple-100'

@@ -8,8 +8,9 @@ import ServicesHome from '../../components/home/ServicesHome'
 import TopSection1 from '../../components/home/TopSection1'
 import WelcomePage from '../../components/home/Welcomepage'
 import WhyChoose from '../../components/home/WhyChoose'
-import PortfolioSection from '../../components/home/WorkPortfolio'
+// import PortfolioSection from '../../components/home/WorkPortfolio'
 import { Helmet } from 'react-helmet'
+import MainServices from '../../components/services/MainServices'
 const HomePage = () => {
   return (
     <>
@@ -31,9 +32,10 @@ const HomePage = () => {
     <Header/>
     <TopSection1/>
     <WelcomePage/>
+    <MainServices/>
     <ServicesHome/>
     <ProcessSection/>
-    <PortfolioSection/>
+    {/* <PortfolioSection/> */}
     <WhyChoose/>
     <CommunitySection/>
     <Contactform/>

@@ -17,11 +17,15 @@ import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import AnimatedBtn from "../btns/AnimatedBtn";
+import { FaChevronDown } from "react-icons/fa6";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
+   
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -47,7 +51,7 @@ const Header: React.FC = () => {
             className="flex items-center hover:underline"
           >
             <FaEnvelope className="mr-2" />
-            contact@nexifydigital.in
+            nexifydigital78@gmail.com
           </a>
         </div>
         <nav aria-label="Social Media Links" className="flex space-x-4 text-[#3647AD]">
@@ -98,7 +102,58 @@ const Header: React.FC = () => {
           <ul className="flex gap-7 text-black">
             <li><Link className="hover:border-b-2 border-black" to="/">Home</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/about">About Us</Link></li>
-            <li><Link className="hover:border-b-2 border-black" to="/services">Services</Link></li>
+            <li
+              className="relative group"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <Link to="/services">
+                <span className="hover:border-b-2 border-white cursor-pointer flex items-center gap-1 group">
+                  Services <FaChevronDown className="transition-transform duration-300 group-hover:rotate-180" />
+                </span>
+              </Link>
+              {isServicesOpen && (
+                <div className="absolute top-full left-0 bg-white text-black shadow-xl z-50 border-t-4 border-[#233AA7] animate-slideDown w-[800px] max-w-[95vw] px-6 py-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                    {[
+                      {
+                        title: "Website Development",
+                        path: "/services/website_development",
+                        description: "We build responsive, modern websites tailored to your business needs.",
+                      },
+                      {
+                        title: "App Development",
+                        path: "/services/app_development",
+                        description: "High-performance mobile apps for both Android and iOS platforms.",
+                      },
+                      {
+                        title: "Software Development",
+                        path: "/services/software_development",
+                        description: "Custom software solutions designed to automate and grow your business.",
+                      },
+                      {
+                        title: "Digital Marketing",
+                        path: "/services/digital_marketing",
+                        description: "Boost your online presence with SEO, social media, and paid ads.",
+                      },
+                      {
+                        title: "Video Editing",
+                        path: "/services/video_editing",
+                        description: "Professional video editing to make your content stand out.",
+                      },
+                    ].map((service) => (
+                      <div key={service.path} className="border border-[#233AA7] rounded-md p-4 hover:bg-[#233AA7] hover:text-white transition-all duration-300 h-full flex flex-col justify-between">
+                        <Link to={service.path} className="text-lg font-semibold hover:underline">
+                          {service.title}
+                        </Link>
+                        <p className="text-sm mt-2">{service.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              </li>
             <li><Link className="hover:border-b-2 border-black" to="/career">Career</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/contact">Contact Us</Link></li>
           </ul>
@@ -159,12 +214,49 @@ const Header: React.FC = () => {
             </div>
           </Link>
     
-          <Link to="/services" onClick={() => setIsMenuOpen(false)}>
+          {/* <Link to="/services" onClick={() => setIsMenuOpen(false)}>
             <div className="flex justify-between items-center gap-6">
               <p>Services</p>
               <FiArrowRight />
             </div>
-          </Link>
+          </Link> */}
+           {/* Services Dropdown in Mobile */}
+          <div>
+            <button
+              onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+              className="flex items-center justify-between w-full"
+            >
+              <Link to='/services'>
+              <span>Services</span>
+              </Link>
+              <FaChevronDown
+                className={`transition-transform duration-300 ${
+                  isMobileServicesOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {isMobileServicesOpen && (
+              <ul className="mt-2 ml-4 space-y-2 text-sm">
+                {[
+                  ["Website Development", "/services/website_development"],
+                  ["App Development", "/services/app_development"],
+                  ["Software Development", "/services/software_development"],
+                  ["Digital Marketing", "/services/digital_marketing"],
+                  ["Video Editing", "/services/video_editing"]
+                ].map(([text, path]) => (
+                  <li key={path}>
+                    <Link
+                      to={path}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block py-1 hover:underline"
+                    >
+                      {text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
     
           <Link to="/career" onClick={() => setIsMenuOpen(false)}>
             <div className="flex justify-between items-center gap-6">
