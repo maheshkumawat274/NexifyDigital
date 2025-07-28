@@ -56,7 +56,7 @@ const WhyChooseUsWebsite = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 text-left border-l-4 border-[#273AA0]"
+            className="bg-gray-50s rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 text-left border-l-4 border-[#273AA0]"
           >
             <div className="flex items-center mb-4">
               <div className="text-white bg-[#273AA0] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-4">
