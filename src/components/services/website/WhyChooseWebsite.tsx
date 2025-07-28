@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const WhyChooseUsWebsite = () => {
   const features = [
@@ -44,52 +44,32 @@ const WhyChooseUsWebsite = () => {
     },
   ];
 
-  return React.createElement(
-    'div',
-    { className: 'bg-white py-20 px-4 sm:px-16' },
-    React.createElement(
-      'div',
-      { className: 'max-w-6xl mx-auto text-center mb-16' },
-      React.createElement('h2', { className: 'text-4xl font-bold text-[#273AA0] mb-4' }, 'Why Choose Us'),
-      React.createElement(
-        'p',
-        { className: 'text-lg text-gray-600' },
-        'Experience top-tier service backed by speed, quality, and professionalism.'
-      )
-    ),
-    React.createElement(
-      'div',
-      {
-        className: 'grid sm:grid-cols-2 lg:grid-cols-3 gap-10 relative',
-      },
-      features.map((feature, index) =>
-        React.createElement(
-          'div',
-          {
-            key: index,
-            'data-aos': 'fade-up',
-            'data-aos-delay': index * 100,
-            className:
-              'relative bg-white rounded-2xl shadow-lg p-8 text-left border-l-4 border-[#273AA0] hover:shadow-xl transition-all duration-300',
-          },
-          React.createElement(
-            'div',
-            { className: 'flex items-center mb-4' },
-            React.createElement(
-              'div',
-              {
-                className:
-                  'text-white bg-[#273AA0] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-4',
-              },
-              index + 1
-            ),
-            React.createElement('div', { className: 'text-3xl' }, feature.icon)
-          ),
-          React.createElement('h3', { className: 'text-xl font-semibold text-gray-800 mb-2' }, feature.title),
-          React.createElement('p', { className: 'text-gray-600 text-sm leading-relaxed' }, feature.description)
-        )
-      )
-    )
+  return (
+    <div className="bg-white py-20 px-4 sm:px-16">
+      <div className="max-w-6xl mx-auto text-center mb-16">
+        <h2 className="text-4xl font-bold text-[#273AA0] mb-4">Why Choose Us</h2>
+        <p className="text-lg text-gray-600">
+          Experience top-tier service backed by speed, quality, and professionalism.
+        </p>
+      </div>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 text-left border-l-4 border-[#273AA0]"
+          >
+            <div className="flex items-center mb-4">
+              <div className="text-white bg-[#273AA0] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-4">
+                {index + 1}
+              </div>
+              <div className="text-3xl">{feature.icon}</div>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

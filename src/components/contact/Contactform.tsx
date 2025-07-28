@@ -81,28 +81,33 @@ const Contactform: React.FC = () => {
           <div className="flex flex-col gap-1">
             <label className="text-sm" htmlFor="name">Name <span className="text-red-500">*</span></label>
             <input
-              id="name"
-              type="text"
-              onChange={handleChange}
-              onInput={(e) => {
-                    e.currentTarget.value = e.currentTarget.value.replace(/[^A-Za-z\s]/g, "");
-                  }}
+  id="name"
+  name="name"
+  type="text"
+  value={formData.name}
+  onChange={handleChange}
+  onInput={(e) => {
+    e.currentTarget.value = e.currentTarget.value.replace(/[^A-Za-z\s]/g, "");
+  }}
+  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
+  required
+/>
 
-              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-2 hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
-              required
-            />
           </div>
            
 
           <div className="flex flex-col gap-1">
             <label className="text-sm" htmlFor="email">Email Address <span className="text-red-500">*</span></label>
             <input
-              id="email"
-              type="email"
-              onChange={handleChange}
-              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-2 hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
-              required
-            />
+  id="email"
+  name="email"
+  type="email"
+  value={formData.email}
+  onChange={handleChange}
+  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
+  required
+/>
+
           </div>
           {/* Mobile Number Field */}
   <div className="flex flex-col gap-1">
@@ -110,18 +115,19 @@ const Contactform: React.FC = () => {
   <div className="flex">
     <span className="bg-[#3647AD] text-white border-2 border-transparent rounded-l-md px-4 py-3 flex items-center">+91</span>
     <input
-      id="mobile"
-      type="tel"
-      min="0"
-      max="9999999999"
-      onChange={handleChange}
-      onInput={(e) => {
-                    e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, "");
-                  }}
-      className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-r-md px-4 py-3 outline-none w-full"
-      placeholder="Enter 10-digit number"
-      required
-    />
+  id="mobile"
+  name="phone"
+  type="tel"
+  value={formData.phone}
+  onChange={handleChange}
+  onInput={(e) => {
+    e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, "");
+  }}
+  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-r-md px-4 py-3 outline-none w-full"
+  placeholder="Enter 10-digit number"
+  required
+/>
+
   </div>
 </div>
 
@@ -131,11 +137,14 @@ const Contactform: React.FC = () => {
           <div className="flex flex-col gap-1">
             <label className="text-sm" htmlFor="description">Description</label>
             <textarea
-              id="description"
-              rows={5}
-              onChange={handleChange}
-              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-2 hover:border-[#3647AD] rounded-md px-4 py-3 outline-none resize-none"
-            ></textarea>
+  id="description"
+  name="message"
+  value={formData.message}
+  onChange={handleChange}
+  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none resize-none"
+  rows={5}
+/>
+
           </div>
 
           <button
