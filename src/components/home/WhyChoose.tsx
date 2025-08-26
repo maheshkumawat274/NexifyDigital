@@ -25,13 +25,13 @@ const WhyChoose = () => {
   }, [features.length]);
 
   return (
-    <section className="py-12 sm:py-0 bg-white text-gray-700 px-4">
+    <section className="py-0 sm:py-12 bg-white text-gray-700 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Title + Description (EXACT match) */}
-        <h1 className="text-3xl md:text-4xl font-bold  text-center mb-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-start sm:text-center mb-6">
           Why Choose NexifyDigital: Your IT Consulting Partner?
         </h1>
-        <p className="text-lg text-center mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-start sm:text-center mb-12 max-w-3xl mx-auto">
           Backed by a highly skilled team and a proven track record, we consult, develop, implement, and integrate advanced IT solutions to unlock the full potential of your business
         </p>
 

@@ -2,7 +2,7 @@
 
 const MissionVisionSection = () => {
   return (
-    <section className="bg-white text-gray-700 py-16 px-4 sm:px-6 lg:px-16">
+    <section className="bg-white text-gray-700 py-8 sm:py-16 px-4 sm:px-6 lg:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
         {/* Our Mission */}

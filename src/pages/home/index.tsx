@@ -11,6 +11,7 @@ import WhyChoose from '../../components/home/WhyChoose'
 // import PortfolioSection from '../../components/home/WorkPortfolio'
 import { Helmet } from 'react-helmet'
 import MainServices from '../../components/services/MainServices'
+import PortfolioSection from '../../components/home/PortfolioSection'
 const HomePage = () => {
   return (
     <>
@@ -35,7 +36,7 @@ const HomePage = () => {
     <MainServices/>
     <ServicesHome/>
     <ProcessSection/>
-    {/* <PortfolioSection/> */}
+    <PortfolioSection/>
     <WhyChoose/>
     <CommunitySection/>
     <Contactform/>

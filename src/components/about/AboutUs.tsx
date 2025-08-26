@@ -3,7 +3,7 @@ import React from "react";
 const JourneySection: React.FC = () => {
   return (
     <section
-      className="bg-white text-gray-800 px-4 md:px-20 py-16"
+      className="bg-white text-gray-800 px-4 md:px-20 py-8 sm:py-16"
       aria-labelledby="exl-journey-heading"
     >
       <div className="flex flex-col md:flex-row items-start gap-8">

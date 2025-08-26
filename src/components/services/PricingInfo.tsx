@@ -3,8 +3,8 @@ import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const PricingInfo: React.FC = () => {
   return (
-    <section className="bg-white py-12 px-6 md:px-20 lg:px-36 text-gray-800" id="pricing-info">
-      <div className="text-center mb-10">
+    <section className="bg-white py-12 px-4 md:px-20 lg:px-36 text-gray-800" id="pricing-info">
+      <div className="text-start sm:text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">Transparent & Flexible Pricing</h2>
         <div className="w-24 h-1 bg-[#3647AD] mx-auto mb-4"></div>
         <p className="text-lg text-gray-600">
@@ -13,7 +13,7 @@ const PricingInfo: React.FC = () => {
         </p>
       </div>
 
-      <div className="max-w-3xl mx-auto text-center text-gray-700">
+      <div className="max-w-3xl mx-auto text-start sm:text-center text-gray-700">
         <p className="mb-6 text-base md:text-lg leading-relaxed">
           Whether you're looking for a simple landing page, a full-featured business website, or an
           advanced eCommerce platform, we tailor our services to fit your goals and budget.

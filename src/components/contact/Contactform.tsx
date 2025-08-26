@@ -58,9 +58,9 @@ const Contactform: React.FC = () => {
 
   return (
     
-    <section className='min-h-screen  py-8'>
+    <section className='min-h-screen pt-6 pb-6 sm:pt-32'>
       <h1 className="text-[50px] sm:text-[70px] mx-[20px] sm:[100px] lg:mx-[270px] font-bold leading-none text-gray-700">CONTACT</h1>
-      <div className="  text-gray-700 flex flex-col px-6 py-12 justify-center items-center">
+      <div className="  text-gray-700 flex flex-col px-4 justify-center items-center">
         
       <div className="flex flex-col md:flex-row justify-center items-start gap-16 mt-10 w-full max-w-6xl">
         {/* Left Section */}
@@ -81,75 +81,78 @@ const Contactform: React.FC = () => {
           <div className="flex flex-col gap-1">
             <label className="text-sm" htmlFor="name">Name <span className="text-red-500">*</span></label>
             <input
-  id="name"
-  name="name"
-  type="text"
-  value={formData.name}
-  onChange={handleChange}
-  onInput={(e) => {
-    e.currentTarget.value = e.currentTarget.value.replace(/[^A-Za-z\s]/g, "");
-  }}
-  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
-  required
-/>
-
-          </div>
-           
-
-          <div className="flex flex-col gap-1">
-            <label className="text-sm" htmlFor="email">Email Address <span className="text-red-500">*</span></label>
-            <input
-  id="email"
-  name="email"
-  type="email"
-  value={formData.email}
-  onChange={handleChange}
-  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
-  required
-/>
-
-          </div>
-          {/* Mobile Number Field */}
-  <div className="flex flex-col gap-1">
-  <label className="text-sm" htmlFor="mobile">Mobile Number <span className="text-red-500">*</span></label>
-  <div className="flex">
-    <span className="bg-[#3647AD] text-white border-2 border-transparent rounded-l-md px-4 py-3 flex items-center">+91</span>
-    <input
-  id="mobile"
-  name="phone"
-  type="tel"
-  value={formData.phone}
-  onChange={handleChange}
-  onInput={(e) => {
-    e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, "");
-  }}
-  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-r-md px-4 py-3 outline-none w-full"
-  placeholder="Enter 10-digit number"
-  required
-/>
-
-  </div>
-</div>
-
-
-         
-
-          <div className="flex flex-col gap-1">
-            <label className="text-sm" htmlFor="description">Description</label>
-            <textarea
-  id="description"
-  name="message"
-  value={formData.message}
-  onChange={handleChange}
-  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none resize-none"
-  rows={5}
-/>
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              onInput={(e) => {
+                e.currentTarget.value = e.currentTarget.value.replace(/[^A-Za-z\s]/g, "");
+              }}
+              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
+              required
+            />
+            
+            </div>
+                       
+            
+            <div className="flex flex-col gap-1">
+              <label className="text-sm" htmlFor="email">Email Address <span className="text-red-500">*</span></label>
+              <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="xyz@gmail.com"
+              value={formData.email}
+              onChange={handleChange}
+              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none"
+              required
+            />
+            
+              </div>
+              {/* Mobile Number Field */}
+              <div className="flex flex-col gap-1">
+              <label className="text-sm" htmlFor="mobile">Mobile Number <span className="text-red-500">*</span></label>
+              <div className="flex">
+                <span className="bg-[#3647AD] text-white border-2 border-transparent rounded-l-md px-4 py-3 flex items-center">+91</span>
+                <input
+                  id="mobile"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  onInput={(e) => {
+                    e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, "");
+                  }}
+                  className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-r-md px-4 py-3 outline-none w-full"
+                  placeholder="Enter 10-digit number"
+                  required
+                />
+            
+              </div>
+            </div>
+            
+            
+                     
+            
+              <div className="flex flex-col gap-1">
+                <label className="text-sm" htmlFor="description">Description</label>
+                <textarea
+              id="description"
+              name="message"
+              placeholder="Enter Your Query"
+              value={formData.message}
+              onChange={handleChange}
+              className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none resize-none"
+              rows={5}
+            />
 
           </div>
 
           <button
             type="submit"
-            className="bg-[#3647AD] text-white cursor-pointer font-bold px-6 py-2 rounded-full w-24 hover:bg-[#3648adc8]"
+            className="hover:bg-[#3647AD] hover:text-white text-center cursor-pointer font-bold py-2 rounded-md w-24 text-black border-2 border-[#3647AD] transition"
           >
             Submit
           </button>

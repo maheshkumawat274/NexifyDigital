@@ -34,7 +34,9 @@ const AboutPage = () => {
      <JourneySection/>
      <MissionVisionSection/>
      <OurValues/>
-     <CommunitySection/>
+     <div className='pb-0 md:pb-36'>
+      <CommunitySection/>
+     </div>
      <Footer/>
     </>
   )

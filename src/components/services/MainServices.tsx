@@ -37,7 +37,7 @@ const services = [
 
 const MainServices: React.FC = () => {
   return (
-    <section id="services" className="py-16 px-4 md:px-12 bg-white">
+    <section id="services" className="py-8 sm:py-16 px-4 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-700 mb-4">
             Our <span className="text-[#273aa0]">Services</span>

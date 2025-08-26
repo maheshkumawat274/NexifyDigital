@@ -37,7 +37,7 @@ const WelcomePage = () => {
       </section>
 
       {/* About Section */}
-      <section className="px-4 md:px-20 py-16 bg-white border-t">
+      <section className="px-4 md:px-20 py-8 bg-white border-t">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Tech-Adept, Business-Centric: Get To Know Us</h2>
         <p className="text-lg max-w-8xl">
           NexifyDigital was founded with the vision of empowering businesses through impactful web solutions.
