@@ -1,6 +1,4 @@
 
-import Header from '../../components/header/Header'
-import Footer from '../../components/footer/Footer'
 import AboutTop from '../../components/about/AboutTop'
 import MissionVisionSection from '../../components/about/MissionVission'
 import OurValues from '../../components/about/OurValues'
@@ -29,7 +27,6 @@ const AboutPage = () => {
         <meta property="og:image" content="https://nexifydigital.in/imgs/IT-Infra.jpg" />
         <link rel="canonical" href="https://nexifydigital.in/about" />
       </Helmet>
-     <Header/>
      <AboutTop/>
      <JourneySection/>
      <MissionVisionSection/>
@@ -37,7 +34,6 @@ const AboutPage = () => {
      <div className='pb-0 md:pb-36'>
       <CommunitySection/>
      </div>
-     <Footer/>
     </>
   )
 }

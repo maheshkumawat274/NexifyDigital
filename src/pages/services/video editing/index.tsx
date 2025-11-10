@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet"
 import Contactform from "../../../components/contact/Contactform"
-import Footer from "../../../components/footer/Footer"
-import Header from "../../../components/header/Header"
 import HowItWorksVideo from "../../../components/services/videoediting/HowWorkVideo"
 import VideoEditing from "../../../components/services/videoediting/VideoEditing"
 import VideoTopSection from "../../../components/services/videoediting/VideoTopSection"
@@ -46,14 +44,12 @@ const VideoEditingPage
           href="https://nexifydigital.in/services/video_editing"
         />
       </Helmet>
-     <Header/>
      <VideoTopSection/>
      <VideoEditing/>
      <WhatWeVideo/>
      <HowItWorksVideo/>
      <WhyChooseVideo/>
      <Contactform/>
-     <Footer/>
     </>
   )
 }

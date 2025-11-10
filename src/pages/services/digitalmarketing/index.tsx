@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet"
 import Contactform from "../../../components/contact/Contactform"
-import Footer from "../../../components/footer/Footer"
-import Header from "../../../components/header/Header"
 import DigitalSection1 from "../../../components/services/digitalmarketing/DigitalSection1"
 import WhyPartner from "../../../components/services/digitalmarketing/DigitalSection2"
 import DigitalTopsection from "../../../components/services/digitalmarketing/TopDigitalSection"
@@ -44,13 +42,11 @@ const DigitalMarketingPage = () => {
           href="https://nexifydigital.in/services/digital_marketing"
         />
       </Helmet>
-     <Header/>
      <DigitalTopsection/>
      <DigitalSection1/>
      <WhyNeedSEO/>
      <WhyPartner/>
      <Contactform/>
-     <Footer/>
     </>
   )
 }

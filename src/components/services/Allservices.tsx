@@ -32,8 +32,8 @@ const IndustrySolutions = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-12 px-4 md:px-16 bg-white">
+      <div className="mx-auto">
         {/* Top Section */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">

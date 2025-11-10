@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet"
 import Contactform from "../../../components/contact/Contactform"
-import Footer from "../../../components/footer/Footer"
-import Header from "../../../components/header/Header"
 import AboutWebsite from "../../../components/services/website/AboutWebsite"
 import TypesWebsite from "../../../components/services/website/TypesWebsites"
 import HeroWebsite from "../../../components/services/website/WebsiteDevelopment"
@@ -45,14 +43,12 @@ const WebsitePage = () => {
           href="https://nexifydigital.in/services/website_development"
         />
       </Helmet>
-     <Header/>
      <HeroWebsite/>
      <AboutWebsite/>
      <TypesWebsite/>
      <WhyNeedWebsite/>
      <WhyChooseUsWebsite/>
      <Contactform/>
-     <Footer/>
     </>
   )
 }

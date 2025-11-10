@@ -11,8 +11,8 @@ const ContactSection3: React.FC = () => {
         <div className="bg-[#273aa0] rounded-2xl p-10 flex flex-col justify-center items-center min-w-[300px]">
           <div>
           <p className="text-xs text-gray-400 mb-4 tracking-widest">EMAIL ME</p>
-          <a href="mailto:contact@nexifydigital.in" className="text-2xl underline">
-          contact@nexifydigital.in
+          <a href="mailto:nexifydigital78@gmail.com" className="text-2xl underline">
+          nexifydigital78@gmail.com
           </a>
           </div>
         </div>

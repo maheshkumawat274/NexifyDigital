@@ -1,6 +1,4 @@
 
-import Header from '../../components/header/Header'
-import Footer from '../../components/footer/Footer'
 import ContactSection from '../../components/contact/ContactSection'
 import ContactSection2 from '../../components/contact/ContactSection2'
 import ContactSection3 from '../../components/contact/ContactSection3'
@@ -28,12 +26,10 @@ const ContactPage = () => {
         <meta property="og:image" content="https://nexifydigital.in/imgs/IT-Infra.jpg" />
         <link rel="canonical" href="https://nexifydigital.in/contact" />
       </Helmet>
-     <Header/>
      <ContactSection/>
      <ContactSection2/>
      <Contactform/>
      <ContactSection3/>
-     <Footer/>
     </>
   )
 }

@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet"
 import Contactform from "../../../components/contact/Contactform"
-import Footer from "../../../components/footer/Footer"
-import Header from "../../../components/header/Header"
 import SoftwareSection1 from "../../../components/services/software/SoftwareSection1"
 import SoftwareTopsection from "../../../components/services/software/TopSoftware"
 import WhyChooseSoftware from "../../../components/services/software/WhyChooseSoftware"
@@ -44,13 +42,11 @@ const SoftwarePage = () => {
           href="https://nexifydigital.in/services/software_development"
         />
       </Helmet>
-     <Header/>
      <SoftwareTopsection/>
      <SoftwareSection1/>
      <WhySoftware/>
      <WhyChooseSoftware/>
      <Contactform/>
-     <Footer/>
     </>
   )
 }

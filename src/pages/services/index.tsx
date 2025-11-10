@@ -1,5 +1,4 @@
-import Footer from "../../components/footer/Footer"
-import Header from "../../components/header/Header"
+
 import IndustrySolutions from "../../components/services/Allservices"
 import MainServices from "../../components/services/MainServices"
 import PricingInfo from "../../components/services/PricingInfo"
@@ -28,12 +27,10 @@ const ServicesPage = () => {
         <link rel="canonical" href="https://nexifydigital.in/services" />
       </Helmet>
 
-    <Header/>
     <ServicesTop/>
     <MainServices/>
     <IndustrySolutions/>
     <PricingInfo/>
-    <Footer/>
     </>
   )
 }

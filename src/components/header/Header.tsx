@@ -101,7 +101,7 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex gap-8 text-[12px] md:text-[18px]" aria-label="Primary Navigation">
           <ul className="flex gap-7 text-black">
             <li><Link className="hover:border-b-2 border-black" to="/">Home</Link></li>
-            <li><Link className="hover:border-b-2 border-black" to="/about">About Us</Link></li>
+            <li><Link className="hover:border-b-2 border-black" to="/about-us">About Us</Link></li>
             <li
               className="relative group"
               onMouseEnter={() => setIsServicesOpen(true)}
@@ -146,7 +146,9 @@ const Header: React.FC = () => {
                         <Link to={service.path} className="text-lg font-semibold hover:underline">
                           {service.title}
                         </Link>
-                        <p className="text-sm mt-2">{service.description}</p>
+                        <Link to={service.path}>
+                         <p className="text-sm mt-2">{service.description}</p>
+                        </Link>
                       </div>
                     ))}
                   </div>
@@ -155,7 +157,7 @@ const Header: React.FC = () => {
               
               </li>
             <li><Link className="hover:border-b-2 border-black" to="/career">Career</Link></li>
-            <li><Link className="hover:border-b-2 border-black" to="/contact">Contact Us</Link></li>
+            <li><Link className="hover:border-b-2 border-black" to="/contact-us">Contact Us</Link></li>
           </ul>
         </nav>
 
@@ -207,7 +209,7 @@ const Header: React.FC = () => {
            </div>
           </Link>
     
-          <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/about-us" onClick={() => setIsMenuOpen(false)}>
             <div className="flex justify-between items-center gap-6">
               <p>About Us</p>
               <FiArrowRight />
@@ -265,7 +267,7 @@ const Header: React.FC = () => {
             </div>
           </Link>
     
-          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/contact-us" onClick={() => setIsMenuOpen(false)}>
             <div className="flex justify-between items-center gap-6">
               <p>Contact Us</p>
               <FiArrowRight />

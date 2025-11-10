@@ -11,13 +11,17 @@ import AppdevelopmentPage from "./pages/services/appdevelopment";
 import SoftwarePage from "./pages/services/software";
 import DigitalMarketingPage from "./pages/services/digitalmarketing";
 import VideoEditingPage from "./pages/services/video editing";
+import BlogDetailsPage from "./pages/blogs/BlogDetailsPage";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import BlogsPage from "./pages/blogs/BlogPages";
 // import Websiteicons from "./components/Websiteicons";
 
 function App() {
   return (
     <Router>
       <ScrollTop/>
-      
+      <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         
@@ -29,13 +33,16 @@ function App() {
          <Route path="/services/digital_marketing" element={<DigitalMarketingPage />} />
          <Route path="/services/video_editing" element={<VideoEditingPage />} />
         </Route>
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about-us" element={<AboutPage />} />
         <Route path="/career" element={<CareerPage/>}/>
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/blogs/:id" element={<BlogDetailsPage />} />
       </Routes>
       {/* <div className="fixed bottom-60 right-0 z-50">
         <Websiteicons/>
       </div> */}
+      <Footer/>
     </Router>
   );
 }

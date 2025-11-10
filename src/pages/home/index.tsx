@@ -1,7 +1,5 @@
 
 import Contactform from '../../components/contact/Contactform'
-import Footer from '../../components/footer/Footer'
-import Header from '../../components/header/Header'
 import CommunitySection from '../../components/home/CommunitySection'
 import ProcessSection from '../../components/home/Process'
 import ServicesHome from '../../components/home/ServicesHome'
@@ -12,6 +10,8 @@ import WhyChoose from '../../components/home/WhyChoose'
 import { Helmet } from 'react-helmet'
 import MainServices from '../../components/services/MainServices'
 import PortfolioSection from '../../components/home/PortfolioSection'
+import IndustrySolutions from '../../components/services/Allservices'
+import HomeBlogSection from '../../components/blogs/HomeBlogSection'
 const HomePage = () => {
   return (
     <>
@@ -30,17 +30,18 @@ const HomePage = () => {
         <meta property="og:image" content="https://nexifydigital.in/imgs/IT-Infra.jpg" />
         <link rel="canonical" href="https://nexifydigital.in" />
       </Helmet>
-    <Header/>
-    <TopSection1/>
-    <WelcomePage/>
-    <MainServices/>
-    <ServicesHome/>
-    <ProcessSection/>
-    <PortfolioSection/>
-    <WhyChoose/>
-    <CommunitySection/>
-    <Contactform/>
-    <Footer/>
+      
+      <TopSection1/>
+      <WelcomePage/>
+      <MainServices/>
+      <ServicesHome/>
+      <IndustrySolutions/>
+      <ProcessSection/>
+      <PortfolioSection/>
+      <WhyChoose/>
+      <HomeBlogSection/>
+      <CommunitySection/>
+      <Contactform/>
     </>
   )
 }

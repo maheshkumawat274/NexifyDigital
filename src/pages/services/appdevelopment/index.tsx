@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet"
 import Contactform from "../../../components/contact/Contactform"
-import Footer from "../../../components/footer/Footer"
-import Header from "../../../components/header/Header"
 import AboutApp from "../../../components/services/app/AppAbout"
 import AppCommunity from "../../../components/services/app/AppCommunity"
 import AppSection1 from "../../../components/services/app/AppSection1"
@@ -44,13 +42,11 @@ const AppdevelopmentPage = () => {
           href="https://nexifydigital.in/services/app_development"
         />
       </Helmet>
-    <Header/>
     <AppTopsection/>
     <AboutApp/>
     <AppSection1/>
     <AppCommunity/>
     <Contactform/>
-    <Footer/>
     </>
   )
 }
