@@ -15,17 +15,22 @@ const values = [
 
 const OurValues = () => {
   return (
-    <section className="py-8 px-4 md:px-10 bg-white" id="our-values">
+    <section id="our-values"
+    aria-label="Core values of NexifyDigital" className="py-8 px-4 md:px-10 bg-white">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-700 mb-4">Our Values</h2>
+        <h2 className="text-4xl font-bold text-gray-700 mb-4">Our Core Values at NexifyDigital
+</h2>
         <p className="text-gray-700 max-w-3xl mx-auto mb-10">
-          These are the values, beliefs, and principles that guide our organization's behavior and decision-making. They are the foundation of NexifyDigital's culture and shape how it interacts with its customers, employees, and other stakeholders.
+          These core values and principles define how NexifyDigital operates and makes decisions. They form the foundation of our culture and shape how we interact with customers, employees, and partners.
+
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {values.map((value, index) => (
             <div
               key={index}
+              aria-label={`Value: ${value.title}`}
+
               className="bg-white border rounded-xl shadow-md p-6 relative hover:shadow-xl transition duration-300"
             >
               <div className="text-4xl mb-4">{value.icon}</div>

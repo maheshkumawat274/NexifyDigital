@@ -10,7 +10,7 @@ const BlogDetailsPage: React.FC = () => {
     return (
       <div className="text-center py-20">
         <h2 className="text-2xl font-bold">Blog not found</h2>
-        <Link to="/blogs" className="text-orange-500 hover:underline">
+        <Link to="/blogs" className="text-[#273aa0] hover:underline">
           Back to Blogs
         </Link>
       </div>
@@ -26,7 +26,7 @@ const BlogDetailsPage: React.FC = () => {
           className="w-full h-80 object-cover rounded-xl shadow-md mb-6"
         />
         <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
-        <p className="text-orange-500 text-sm font-semibold mb-6">
+        <p className="text-[#273aa0] text-sm font-semibold mb-6">
           {new Date(blog.date).toLocaleDateString()}
         </p>
         <p className="text-gray-700 leading-relaxed whitespace-pre-line">
@@ -36,7 +36,7 @@ const BlogDetailsPage: React.FC = () => {
         <div className="mt-8">
           <Link
             to="/blogs"
-            className="bg-orange-500 text-white px-5 py-2 rounded-full hover:bg-orange-600 transition"
+            className="bg-[#273aa0] cursor-pointer text-white px-5 py-2 rounded-full hover:bg-[#182a94] transition"
           >
             ← Back to All Blogs
           </Link>

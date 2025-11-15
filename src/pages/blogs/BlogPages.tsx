@@ -45,7 +45,7 @@ const BlogsPage: React.FC = () => {
               <p className="text-gray-600 text-sm mb-3">{blog.desc}</p>
               <Link
                 to={`/blogs/${blog.id}`}
-                className="text-orange-600 font-semibold hover:underline"
+                className="text-[#273aa0] font-semibold hover:underline"
               >
                 Read More →
               </Link>

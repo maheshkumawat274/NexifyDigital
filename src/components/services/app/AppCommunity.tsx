@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const AppCommunity = () => {
   return (
-    <section className="relative bg-white pt-10 pb-36 px-6 md:px-16">
+    <section className="relative bg-white pt-10 pb-36 px-6 md:px-16" aria-labelledby="community-heading">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-16">
 
         {/* Left Image with Circle */}
@@ -12,19 +12,18 @@ const AppCommunity = () => {
 
           {/* Team Image */}
           <img
-            src='/imgs/About-Us-Community-Section.png'
-            alt="Team"
+            src='/imgs/nexify-digital-community-team.png'
+            alt="Nexify Digital app development team collaborating on projects"
+            loading="lazy"
             className="w-[300px] md:w-[350px] object-contain relative top-4 md:top-4 z-10"
           />
         </div>
 
         {/* Right Content */}
         <div className="md:w-1/2 w-full">
-          <h2 className="text-4xl font-bold text-gray-700 mb-4">Community And Work</h2>
+          <h2 id="community-heading" className="text-4xl font-bold text-gray-700 mb-4">Nexify Digital Community & Workplace Culture</h2>
           <p className="text-gray-500 text-[16px] leading-relaxed mb-10 max-w-xl">
-            We are trusted by startups and growing enterprises across industries because  
-            we deliver innovative digital solutions that simplify their operations, boost productivity,  
-            and drive real growth through our expert web development, software, and digital services.
+            At Nexify Digital, we’re trusted by startups and enterprises across industries for delivering innovative web, app, and software development solutions. Our team focuses on simplifying operations, boosting productivity, and driving real business growth through expert IT consulting and digital innovation.
           </p>
 
           {/* Stats Box */}
@@ -47,7 +46,7 @@ const AppCommunity = () => {
             {/* Orange Line + Button */}
             <div className="absolute right-[-50px] bottom-0 h-[4px] w-[80px] bg-[#3647AD] hidden sm:block"></div>
             <button className="absolute right-[0px] sm:right-[-160px] bottom-[-25px] bg-[#3647AD] hover:bg-[#1a30ad]  text-white font-medium py-2 px-4 rounded-md shadow-md cursor-pointer">
-              <Link to='/career'>Join Our Team</Link>
+              <Link to='/career' aria-label="Join Nexify Digital's app development team">Join Our Team</Link>
             </button>
           </div>
         </div>

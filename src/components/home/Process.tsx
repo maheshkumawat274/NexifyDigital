@@ -48,14 +48,15 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-16 px-2 sm:px-8 bg-gray-50">
+    <section id="web-development-process"  className="py-16 px-2 md:px-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-700 mb-4">
             Our <span className="text-[#273aa0]">Process</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From concept to delivery - our transparent workflow ensures success
+            From concept to delivery — our web development process ensures reliable results for businesses across India.
+
           </p>
         </div>
 
@@ -71,6 +72,7 @@ const ProcessSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
+                aria-label={`${step.title} — part of Nexify Digital's web development process`}
                 className={`relative ${index % 2 === 0 ? 'md:mt-0' : 'md:mt-20'} ${index >= 3 ? 'lg:mt-20' : ''}`}
               >
                 <div className={`p-6 rounded-xl shadow-md ${step.color} relative z-10 h-full`}>

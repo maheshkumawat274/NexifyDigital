@@ -5,7 +5,7 @@ import React from 'react';
 const  CareerTop: React.FC = () => {
   
   return (
-    <section className="relative w-full h-[50vh] md:h-[70vh] bg-cover bg-center" style={{ backgroundImage: "url('/imgs/career.jpg')" }}>
+    <section id='carrer-top-section' className="relative w-full h-[50vh] md:h-[70vh] bg-cover bg-center" style={{ backgroundImage: "url('/imgs/career.jpg')" }}>
       {/* Overlay */}
       {/* <div className="absolute inset-0 bg-black opacity-20"></div> */}
       <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#3647AD] via-transparent to-transparent" />

@@ -10,7 +10,7 @@ const AboutWebsite = () => {
       {/* Left Side Image */}
       <div className="relative w-full lg:w-1/2 flex justify-center">
         <img
-          src="/imgs/about-us-img.jpg"
+          src="/imgs/nexify-digital-team-india.jpg"
           alt="Team Working"
           className="rounded-lg shadow-lg w-full max-w-md"
         />

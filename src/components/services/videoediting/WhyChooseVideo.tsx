@@ -36,7 +36,7 @@ const reasons = [
 
 const WhyChooseVideo = () => {
   return (
-    <section className="py-12 px-4 bg-white">
+    <section className="px-4 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-[#273AA0] mb-4">Why Choose Us for Editing</h2>
         <p className="text-gray-600 mb-10">We’re committed to delivering video content that’s fast, flawless, and fully customized.</p>

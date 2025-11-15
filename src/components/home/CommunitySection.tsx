@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CommunitySection = () => {
   return (
-    <section className="relative bg-white py-10 px-6 md:px-16">
+    <section id="community-work"  className="relative bg-white py-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-16">
 
         {/* Left Image with Circle */}
@@ -12,19 +12,19 @@ const CommunitySection = () => {
 
           {/* Team Image */}
           <img
-            src='./imgs/About-Us-Community-Section.png'
-            alt="Team"
+            src='./imgs/nexify-digital-community-team.png'
+            alt="Nexify Digital team collaboration and community culture"
             className="w-[300px] md:w-[350px] object-contain relative top-4 md:top-4 z-10"
           />
         </div>
 
         {/* Right Content */}
         <div className="md:w-1/2 w-full">
-          <h2 className="text-4xl font-bold text-gray-700 mb-4">Community And Work</h2>
+          <h2 className="text-4xl font-bold text-gray-700 mb-4">Community & Work Culture at Nexify Digital
+</h2>
           <p className="text-gray-500 text-[16px] leading-relaxed mb-10 max-w-xl">
-            We are trusted by startups and growing enterprises across industries because  
-            we deliver innovative digital solutions that simplify their operations, boost productivity,  
-            and drive real growth through our expert web development, software, and digital services.
+            We are trusted by startups and growing enterprises across India because we deliver innovative digital solutions that simplify operations, boost productivity, and drive real growth through our expert web development, software, and digital services.
+
           </p>
 
           {/* Stats Box */}
@@ -47,7 +47,7 @@ const CommunitySection = () => {
             {/* Orange Line + Button */}
             <div className="absolute right-[-50px] bottom-0 h-[4px] w-[80px] bg-[#3647AD] hidden sm:block"></div>
             <button className="absolute right-[0px] sm:right-[-160px] bottom-[-25px] bg-[#3647AD] hover:bg-[#1a30ad]  text-white font-medium py-2 px-4 rounded-md shadow-md cursor-pointer">
-              <Link to='/career'>Join Our Team</Link>
+              <Link to='/career' aria-label="Join Nexify Digital careers and work culture team">Join Our Team</Link>
             </button>
           </div>
         </div>

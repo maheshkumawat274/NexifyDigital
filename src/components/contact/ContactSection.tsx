@@ -1,7 +1,8 @@
 
 const ContactSection = () => {
   return (
-    <section className="relative flex flex-col sm:flex-row items-center px-2 sm:px-8 justify-between bg-white overflow-hidden">
+    <section id="contact-section" aria-label="Contact Nexify Digital section"
+ className="relative flex flex-col sm:flex-row items-center px-2 sm:px-8 justify-between bg-white overflow-hidden">
       {/* Left Side Text */}
       <div className="p-8 md:p-16 lg:p-24 z-10">
         <div className="relative">
@@ -12,6 +13,13 @@ const ContactSection = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800">
             We’d love to hear from you!
           </h1>
+          <p className="text-gray-600 mt-4 max-w-xl">
+            We’d love to hear from you!
+            Connect with Nexify Digital — your trusted partner for website development, app creation, and digital solutions.
+
+            Our team is ready to bring your ideas to life.
+          </p>
+
         </div>
       </div>
 
@@ -19,8 +27,8 @@ const ContactSection = () => {
       <div className=" relative">
         <div className="">
           <img
-            src="./imgs/contact-us-banner-desktop.webp"
-            alt="Woman working on laptop"
+            src="./imgs/contact-nexify-digital-web-app-services.webp"
+            alt="Contact Nexify Digital team for website and app development inquiries"
             className="object-cover w-[150%] sm:w-full h-64 sm:h-full"
             loading="lazy"
           />

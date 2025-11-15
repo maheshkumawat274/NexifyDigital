@@ -27,7 +27,7 @@ const WhySoftware: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white py-16 px-6 md:px-20 text-gray-800">
+    <section className="bg-white px-4 md:px-20 text-gray-800">
       <div className="text-center mb-12" data-aos="fade-up">
         <h2 className="text-4xl font-bold text-[#273AA0]mb-4">Why You Need Software?</h2>
         <p className="text-lg max-w-2xl mx-auto text-gray-600">

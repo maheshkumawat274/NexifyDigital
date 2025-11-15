@@ -3,6 +3,7 @@ import React from "react";
 const JourneySection: React.FC = () => {
   return (
     <section
+      id="nexifydigital-journey"
       className="bg-white text-gray-800 px-4 md:px-20 py-8 sm:py-16"
       aria-labelledby="exl-journey-heading"
     >
@@ -13,7 +14,8 @@ const JourneySection: React.FC = () => {
             id="exl-journey-heading"
             className="text-3xl md:text-4xl font-semibold mb-2"
           >
-            The NexifyDigital Journey
+           The Nexify Digital Journey — Building Digital Futures
+
           </h2>
           <div className="w-12 h-1 bg-[#3647AD] mb-10"></div>
           <div className="flex items-center gap-2 mt-4">
@@ -26,7 +28,7 @@ const JourneySection: React.FC = () => {
         {/* Right Column: Content */}
         <div className="w-full md:w-2/3 space-y-8">
           <p className="text-lg leading-relaxed">
-            NexifyDigital was born from a passion for digital innovation and a vision to empower businesses through technology. As a newly launched digital solutions startup, our mission is clear: to deliver powerful websites, engaging designs, and modern marketing that drives results.
+            Nexify Digital was born from a passion for digital innovation and a vision to empower businesses through technology. As a newly launched digital solutions startup, our mission is clear: to deliver powerful websites, engaging designs, and modern marketing that drives results.
           </p>
 
           <div>
@@ -34,7 +36,8 @@ const JourneySection: React.FC = () => {
               Innovation from the Start
             </h3>
             <p className="text-lg leading-relaxed">
-              We believe that innovation doesn't need to wait for scale. At NexifyDigital, we integrate the latest in web development, graphic design, and digital marketing from day one. Our goal is to help businesses—big or small—grow online with bold, creative, and effective digital solutions.
+              We believe that innovation doesn't need to wait for scale. At NexifyDigital, we integrate the latest in web development, graphic design, and digital marketing from day one. Our goal is to help businesses of all sizes grow online with bold, creative, and effective digital solutions.
+
             </p>
           </div>
         </div>

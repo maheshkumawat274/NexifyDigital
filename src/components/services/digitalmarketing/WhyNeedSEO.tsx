@@ -81,7 +81,7 @@ const reasons = [
 
 const WhyNeedSEO: React.FC = () => {
   return (
-    <div className="py-16 px-4 md:px-60 bg-white text-center">
+    <div className="px-4 md:px-60 bg-white text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-[#0B1979] mb-4">
         Why Do Your Businesses Need SEO & Digital Marketing Services?
       </h2>

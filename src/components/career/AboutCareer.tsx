@@ -3,6 +3,7 @@ import React from "react";
 const AboutCareer: React.FC = () => {
   return (
     <section
+      id="career-about"
       className="bg-white text-gray-800 px-4 md:px-20 py-8 sm:py-16"
       aria-labelledby="exl-journey-heading"
     >
@@ -13,7 +14,7 @@ const AboutCareer: React.FC = () => {
             id="exl-journey-heading"
             className="text-3xl md:text-4xl font-semibold mb-2"
           >
-            Careers at NexifyDigital
+           Careers at NexifyDigital — Build Your Future With Us
           </h2>
           <div className="w-12 h-1 bg-[#3647AD] mb-10"></div>
           <div className="flex items-center gap-2 mt-4">
@@ -26,7 +27,9 @@ const AboutCareer: React.FC = () => {
         {/* Right Column: Content */}
         <div className="w-full md:w-2/3 space-y-8">
           <p className="text-lg leading-relaxed">
-            At NexifyDigital, we are not just building digital solutions—we're building careers. As a fast-growing startup in the world of web development, design, and digital marketing, we believe in empowering individuals to innovate, lead, and grow alongside us.
+            At Nexify Digital, we are not just building digital solutions—we're building careers. As a fast-growing startup serving businesses across India in web development, design, and digital marketing, we believe in empowering individuals to innovate, grow, and lead with confidence.
+
+
           </p>
 
           <div>
@@ -34,7 +37,7 @@ const AboutCareer: React.FC = () => {
               Why Join Us?
             </h3>
             <p className="text-lg leading-relaxed">
-              From day one, we’ve focused on fostering a collaborative and creative work culture. Whether you’re a developer, designer, marketer, or strategist, NexifyDigital offers an open environment where your ideas matter. We support career growth through mentorship, real-world projects, and the freedom to take ownership of your work.
+              From day one, we’ve focused on fostering a collaborative and creative work culture. Whether you’re a developer, designer, marketer, or strategist, Nexify Digital offers an open, collaborative environment where your ideas truly matter. We support career growth through mentorship, real-world projects, and the freedom to take ownership of your work.
             </p>
           </div>
 
@@ -43,7 +46,8 @@ const AboutCareer: React.FC = () => {
               Your Future Begins Here
             </h3>
             <p className="text-lg leading-relaxed">
-              Join us in shaping the digital future. We're always on the lookout for passionate, driven, and curious minds ready to make an impact. Discover a career that challenges you, values your voice, and rewards your ambition.
+              Join us in shaping the digital future. We're always on the lookout for passionate, driven, and curious minds ready to make an impact. Discover a career that challenges you, values your voice, and rewards your ambition with real opportunities.
+
             </p>
           </div>
         </div>

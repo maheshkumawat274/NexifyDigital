@@ -27,8 +27,8 @@ const steps = [
 
 const HowItWorksVideo: React.FC = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-10">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#273AA0] mb-4">How It Works</h2>
+    <section id="how-video-editing-works" className="bg-white py-16 px-4 md:px-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#273AA0] mb-4">How Our Professional Video Editing Process Works</h2>
       
       {/* Introductory Paragraph */}
       <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">

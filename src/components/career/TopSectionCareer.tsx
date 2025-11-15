@@ -8,10 +8,10 @@ const texts = [
 ];
 
 const images = [
-  './imgs/career-img-1.01c25e7c84daa35eadde.png',
-  './imgs/img-main-careers-2018_1.webp',
+  './imgs/career-at-nexify-digital1.png',
+  './imgs/career-at-nexify-digital.webp',
   './imgs/job-search-career-advice-stories.jpg',
-  './imgs/career-11.jpg',
+  './imgs/career-at-nexify-digital4.jpg',
 ];
 
 const TopSectionCareer: React.FC = () => {
@@ -25,13 +25,13 @@ const TopSectionCareer: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-16 flex items-center justify-center px-6 md:px-20 bg-white z-30">
+    <section id="career-section" className="pb-10 flex items-center justify-center px-6 md:px-20 bg-white z-30">
      
       <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl">
         <div className="text-center md:text-left mb-8 md:mb-0 max-w-xl mt-10 sm:mt-0">
           <h1 className="text-4xl md:text-6xl font-bold">
             <span className="text-[#3647AD] transition-all duration-500">{texts[index]}</span>{' '}<br/>
-            <span className="text-gray-600">your career</span>
+            <span className="text-gray-600">your career with Nexify Digital</span>
           </h1>
           <p className="mt-4 text-lg text-gray-500">
             At our company, we’re looking for passionate individuals who want to grow and make an impact in tech.
@@ -49,7 +49,8 @@ const TopSectionCareer: React.FC = () => {
           
           <img
             src={images[index]}
-            alt="career visual"
+            alt={`Career at Nexify Digital – ${texts[index]} your career`}
+
             className="w-full h-full object-cover rounded-full border-4 border-white shadow-xl flex relative z-10"
           />
 

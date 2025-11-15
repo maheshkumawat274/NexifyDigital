@@ -26,7 +26,7 @@ const features = [
 
 const WhyChooseSoftware: React.FC = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-12">
+    <section className="bg-white pt-16 px-4 md:px-12">
       <h2 className="text-4xl font-bold text-center text-[#273AA0] mb-12">
         Why Choose Our Software Development Services?
       </h2>

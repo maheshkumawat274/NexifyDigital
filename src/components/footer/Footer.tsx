@@ -10,6 +10,7 @@ const Footer: React.FC = () => {
           <span>Need Help? Chat with Expert Developers!</span>
           <a
             href="https://wa.me/+916376228917"
+            aria-label="Chat on WhatsApp with Nexify Digital expert developers"
             className="px-6 py-2 bg-white text-[#273aa0] rounded-full hover:scale-105 shadow transition font-bold"
           >
             WHATSAPP
@@ -17,14 +18,15 @@ const Footer: React.FC = () => {
         </div>
       </section>
 
-      <footer className="w-full bg-[#273aa0] text-white py-14 px-4 md:px-14 flex flex-col md:flex-row justify-between items-start text-sm border-t border-[#12130f] gap-10">
+      <footer aria-label="Nexify Digital footer section" className="w-full bg-[#273aa0] text-white py-14 px-4 md:px-14 flex flex-col md:flex-row justify-between items-start text-sm border-t border-[#d5d7d2] gap-10">
         
         {/* Company Info */}
         <div className="md:w-1/4">
           <h1 className="text-5xl md:text-3xl lg:text-4xl font-bold">NexifyDigital</h1>
           
           <p className="text-md py-4">
-            With 5+ years of experience and 100+ clients, the instructor has helped many professionals and businesses achieve success in the IT and technology industry.
+            With 5+ years of experience and 100+ clients, Nexify Digital has helped businesses and professionals scale through high-quality web development, software, and digital solutions.
+
           </p>
         </div>
 
@@ -33,16 +35,16 @@ const Footer: React.FC = () => {
           <h1 className="font-bold mb-3 text-2xl sm:text-3xl">Useful Links</h1>
           <ul className="text-md space-y-2">
             <li>
-              <Link to="/about-us" className="hover:underline">About Us</Link>
+              <Link to="/about-us" aria-label="Know more about Nexify Digital" className="hover:underline">About Us</Link>
             </li>
             <li>
-              <Link to="/services" className="hover:underline">Services</Link>
+              <Link aria-label="Explore Nexify Digital services" to="/services" className="hover:underline">Services</Link>
             </li>
             <li>
-              <Link to="/career" className="hover:underline">Career</Link>
+              <Link to="/career" aria-label="Explore career opportunities at Nexify Digital" className="hover:underline">Career</Link>
             </li>
             <li>
-              <Link to="/contact-us" className="hover:underline">Contact Us</Link>
+              <Link to="/contact-us" aria-label="Contact Nexify Digital team" className="hover:underline">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -51,11 +53,12 @@ const Footer: React.FC = () => {
         <div className="md:w-1/4">
           <h1 className="font-bold mb-3 text-2xl sm:text-3xl">Services</h1>
           <ul className="text-md space-y-2">
-            <li className="hover:underline"><Link to='/services/website_development'>Website Development</Link></li>
-            <li className="hover:underline"><Link to='/services/services/app_development'>App Development</Link></li>
-            <li className="hover:underline"><Link to='/services/software_development'>Software Development</Link></li>
-            <li className="hover:underline"><Link to='/services/digital_marketing'>Digital Marketing</Link></li>
-            <li className="hover:underline"><Link to='/services/video_editing'>Video Editing</Link></li>
+            <li className="hover:underline"><Link aria-label="Website development services by Nexify Digital" to='/services/website_development'>Website Development</Link></li>
+            <li className="hover:underline"><Link aria-label="Mobile app development services by Nexify Digital" to='/services/app_development'>App Development</Link></li>
+            <li className="hover:underline"><Link  aria-label="Custom software development by Nexify Digital" to='/services/software_development'>Software Development</Link></li>
+            <li className="hover:underline"><Link   aria-label="Digital marketing services by Nexify Digital"
+ to='/services/digital_marketing'>Digital Marketing</Link></li>
+            <li className="hover:underline"><Link aria-label="Professional video editing services by Nexify Digital" to='/services/video_editing'>Video Editing</Link></li>
           </ul>
         </div>
 
@@ -64,8 +67,16 @@ const Footer: React.FC = () => {
           <h1 className="font-bold mb-3 text-2xl sm:text-3xl">Contact</h1>
           <div className="text-md space-y-2">
             <div>Delhi, 110020</div>
-            <div>+91 6376228917</div>
-            <div>nexifydigital78@gmail.com</div>
+            <div>
+              <a href="tel:+916376228917" className="hover:underline">+91 6376228917</a>
+
+            </div>
+            <div>
+              <a href="mailto:nexifydigital78@gmail.com" className="hover:underline">
+                nexifydigital78@gmail.com
+              </a>
+              
+            </div>
             <div className="py-5">
             <SocialMediaIcons />
           </div>

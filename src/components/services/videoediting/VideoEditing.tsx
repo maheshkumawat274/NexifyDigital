@@ -30,8 +30,8 @@ const services = [
 
 const VideoEditing: React.FC = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-12">
-      <h2 className="text-4xl font-bold text-center text-[#273AA0] mb-12">
+    <section className="bg-white py-10 px-4 md:px-12">
+      <h2 className="text-4xl font-bold text-center text-[#273AA0] mb-4">
         Video Editing & Shooting Services
       </h2>
       <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">

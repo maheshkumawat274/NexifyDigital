@@ -7,7 +7,7 @@ const AboutApp = () => {
   return (
     <div>
       <h1 className="text-[#273AA0] text-center mt-8 font-bold text-3xl">
-        About App Development
+        Mobile App Development Company | Nexify Digital
       </h1>
 
       <section className="flex flex-col lg:flex-row items-center justify-center px-2 md:px-20 py-16">
@@ -17,14 +17,14 @@ const AboutApp = () => {
           
         >
           <img
-            src="/imgs/Importance-of-mobile-apps.jpg"
-            alt="App Development"
+            src="/imgs/mobile-app-development-delhi.jpg"
+            alt="Custom Mobile App Development by Nexify Digital"
             className="rounded-lg shadow-lg w-full max-w-md"
           />
           <div className="absolute top-1/2 right-[60px] transform -translate-y-1/2 about-circle">
             <img
               src="/imgs/about-circle.svg"
-              alt="Consultation"
+              alt="Mobile App Consultation Icon"
               className="w-20 md:w-24"
             />
           </div>
