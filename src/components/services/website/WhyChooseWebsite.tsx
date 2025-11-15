@@ -45,9 +45,10 @@ const WhyChooseUsWebsite = () => {
   ];
 
   return (
-    <div className="bg-white py-20 px-4 sm:px-16">
+    <div id="why-choose-us"
+      aria-label="Why choose Nexify Digital for website development services" className="bg-white pt-10 px-4 sm:px-16">
       <div className="max-w-6xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-bold text-[#273AA0] mb-4">Why Choose Us</h2>
+        <h2 className="text-4xl font-bold text-[#273AA0] mb-4">Why Choose Us - Website development company in India</h2>
         <p className="text-lg text-gray-600">
           Experience top-tier service backed by speed, quality, and professionalism.
         </p>
@@ -62,7 +63,7 @@ const WhyChooseUsWebsite = () => {
               <div className="text-white bg-[#273AA0] rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-4">
                 {index + 1}
               </div>
-              <div className="text-3xl">{feature.icon}</div>
+              <div aria-hidden="true" className="text-3xl">{feature.icon}</div>
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
             <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>

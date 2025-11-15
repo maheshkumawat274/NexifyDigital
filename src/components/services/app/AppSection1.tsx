@@ -26,13 +26,18 @@ const contentPoints = [
 
 const AppSection1: React.FC = () => {
   return (
-    <div className=" py-12 px-4 md:px-20">
+    <div
+    id="custom-mobile-app-features"
+      aria-label="Why choose Nexify Digital for mobile app development"
+
+     className=" py-12 px-4 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Left Side - Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             src="/imgs/home-mockup.png" // replace with actual path
-            alt="App Preview"
+            alt="Mobile app interface mockup designed by Nexify Digital"
+            loading="lazy"
             className="w-[90%] max-w-md drop-shadow-2xl"
           />
         </div>

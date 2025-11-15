@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const AppCommunity = () => {
   return (
-    <section className="relative bg-white pt-10 pb-36 px-6 md:px-16" aria-labelledby="community-heading">
+    <section id="app community section" className="relative bg-white pt-10 pb-36 px-6 md:px-16" aria-labelledby="community-heading">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-16">
 
         {/* Left Image with Circle */}

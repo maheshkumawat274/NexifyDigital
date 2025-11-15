@@ -2,7 +2,8 @@ import "../website/AboutWebsite.css"; // Ensure you create this CSS file for ani
 
 const SoftwareSection1 = () => {
   return (
-    <div>
+    <div id="custom-software-development-delhi-ncr"
+      aria-label="Custom software development company in Delhi NCR by Nexify Digital">
       <h1 className="text-[#273AA0] text-center mt-8 font-bold text-4xl">
         Custom Software Development <br /> Solutions Tailored for Your Business
       </h1>
@@ -12,13 +13,13 @@ const SoftwareSection1 = () => {
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <img
             src="/imgs/nexify-digital-team-india.jpg"
-            alt="Software Development Team"
+            alt="Nexify Digital software development team in India"
             className="rounded-lg shadow-lg w-full max-w-md"
           />
           <div className="absolute top-1/2 right-[60px] transform -translate-y-1/2 about-circle">
             <img
               src="/imgs/about-circle.svg"
-              alt="Software Icon"
+              alt="Nexify Digital software development icon"
               className="w-20 md:w-24"
             />
           </div>
@@ -30,7 +31,11 @@ const SoftwareSection1 = () => {
             Build Reliable, Scalable & Smart Software Solutions
           </h1>
           <p className="text-gray-600 mt-4">
-            We specialize in delivering customized software solutions for businesses of all sizes. From ERP systems to customer management tools, our software helps streamline operations and drive business growth with cutting-edge technology and expert development.
+            As a trusted software development company in Delhi NCR, we deliver 
+            customized and scalable software solutions for businesses of every 
+            size. From ERP systems to CRM platforms, our development team builds 
+            secure, high-performance applications that streamline operations and 
+            support long-term business growth across India.
           </p>
           <ul className="mt-6 space-y-2">
             <li className="flex items-center gap-2 font-semibold">
@@ -49,7 +54,8 @@ const SoftwareSection1 = () => {
               ✅ Ongoing Support & Maintenance
             </li>
           </ul>
-          <a href="tel:+916376228917">
+          <a href="tel:+916376228917"title="Free software development consultation - Nexify Digital"
+            aria-label="Call Nexify Digital for software development consultation">
             <button className="mt-6 bg-[#273AA0] cursor-pointer hover:underline text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#2739a0] transition">
               Get a Free Software Consultation →
             </button>

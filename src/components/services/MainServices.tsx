@@ -84,7 +84,7 @@ const MainServices: React.FC = () => {
                 {/* Content */}
                 <div className="relative z-10">
                   <div className="flex justify-center mb-4">{service.icon}</div>
-                  <h3 className="text-xl text-gray-200 font-semibold mb-2">{service.title}</h3>
+                  <h3 className="text-xl text-white font-semibold mb-2">{service.title}</h3>
                   <p className="text-white text-sm">{service.description}</p>
                 </div>
               </Link>

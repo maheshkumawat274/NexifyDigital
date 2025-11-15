@@ -28,11 +28,12 @@ const reasons = [
 
 const WhyNeedWebsite: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section id="why-need-website" aria-label="Why businesses need a website" className="bg-gray-50 py-10 px-4">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4 text-[#273AA0]">Why You Need a Website</h2>
         <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
-          Whether you're a small business or a growing enterprise, having a website is essential to reaching your audience and scaling up.
+          Whether you're a startup, small business, or enterprise, a website built by a professional website development company in India helps you reach customers faster, build trust, and grow your business online.
+
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((item, index) => (
@@ -45,7 +46,7 @@ const WhyNeedWebsite: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <div className="mb-4">{item.icon}</div>
+              <div aria-hidden="true" className="mb-4">{item.icon}</div>
               <h4 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h4>
               <p className="text-sm text-gray-600">{item.desc}</p>
             </motion.div>

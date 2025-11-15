@@ -9,7 +9,7 @@ const services = [
   {
     title: "eCommerce Website",
     description: "Fully functional online stores with product catalogs, secure payments, and user-friendly interfaces to boost online sales.",
-    image: "/imgs/Importance-of-mobile-apps.jpg",
+    image: "/imgs/portfolio2.jpg",
   },
   {
     title: "Portfolio Website",
@@ -161,13 +161,13 @@ const TypesWebsite: React.FC = () => {
   const visibleServices = showAll ? services : services.slice(0, 9);
 
   return (
-    <section className="bg-gray-100 py-16 px-4 md:px-12">
+    <section id="types-of-websites" className="bg-gray-100 py-16 px-4 md:px-12">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap justify-between items-center">
           <div>
             <h1 className="text-[#273AA0] font-bold text-lg">Our Website Solutions</h1>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl text-gray-800 font-bold mt-2">
-              We Build <span className="block">Every Type of Website You Need</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl text-gray-800 font-bold mt-2">
+              We Build <span className="block">Every Type of Website You Need — Custom Web Development Company in India</span>
             </h1>
           </div>
 
@@ -176,7 +176,9 @@ const TypesWebsite: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer" aria-label="portfolio"
           >   
-            <button className="mt-8 px-6 py-3 cursor-pointer bg-[#273AA0] text-white font-bold rounded-full hover:bg-[#2739a0ee] transition">
+            <button aria-label="Visit Nexify Digital portfolio"
+              title="Portfolio - Nexify Digital"
+              className="mt-8 px-6 py-3 cursor-pointer bg-[#273AA0] text-white font-bold rounded-full hover:bg-[#2739a0ee] transition">
               Visit Portfolio &#8599;
             </button>
           </a>
@@ -201,7 +203,8 @@ const TypesWebsite: React.FC = () => {
               <div className="relative overflow-hidden mt-4 rounded-lg">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={`${service.title} created by Nexify Digital — website development company in India`}
+                  loading="lazy"
                   className="w-full h-auto rounded-lg transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-300 opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
