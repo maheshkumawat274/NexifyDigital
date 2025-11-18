@@ -44,6 +44,9 @@ const Footer: React.FC = () => {
               <Link to="/career" aria-label="Explore career opportunities at Nexify Digital" className="hover:underline">Career</Link>
             </li>
             <li>
+              <Link to="/blogs" aria-label="Read the latest blogs and insights from Nexify Digital" className="hover:underline">blogs</Link>
+            </li>
+            <li>
               <Link to="/contact-us" aria-label="Contact Nexify Digital team" className="hover:underline">Contact Us</Link>
             </li>
           </ul>

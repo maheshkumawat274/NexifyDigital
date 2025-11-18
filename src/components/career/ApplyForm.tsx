@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { countryCodes } from "../data/CountryCodes";
+import config from "../../../config";
 
 interface ApplyFormProps {
   onSuccess: () => void;
@@ -21,48 +22,59 @@ const ApplyForm: React.FC<ApplyFormProps> = ({ onSuccess }) => {
 
   const [errors, setErrors] = useState<FormErrors>({});
 
-  // VALIDATION
   const validate = (): boolean => {
     const validationErrors: FormErrors = {};
 
-    // Full Name
-    if (!fullName.trim()) {
-      validationErrors.fullName = "Full name is required.";
-    } else if (!/^[A-Za-z ]+$/.test(fullName)) {
+    if (!fullName.trim()) validationErrors.fullName = "Full name is required.";
+    else if (!/^[A-Za-z ]+$/.test(fullName))
       validationErrors.fullName = "Only alphabets allowed.";
-    }
 
-    // Email
-    if (!email.trim()) {
-      validationErrors.email = "Email is required.";
-    } else if (!/^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/.test(email)) {
+    if (!email.trim()) validationErrors.email = "Email is required.";
+    else if (!/^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/.test(email))
       validationErrors.email = "Invalid email format.";
-    }
 
-    // Phone
-    if (!phone.trim()) {
-      validationErrors.phone = "Phone number is required.";
-    } else if (!/^\d{7,12}$/.test(phone)) {
+    if (!phone.trim()) validationErrors.phone = "Phone number is required.";
+    else if (!/^\d{7,12}$/.test(phone))
       validationErrors.phone = "Enter a valid phone number.";
-    }
 
-    // Resume
-    if (!resume) {
-      validationErrors.resume = "Please upload your resume.";
-    }
+    if (!resume) validationErrors.resume = "Please upload your resume.";
 
     setErrors(validationErrors);
-
     return Object.keys(validationErrors).length === 0;
   };
 
-  // SUBMIT
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (validate()) {
-      alert("Application Submitted Successfully ✔️");
-      onSuccess(); // close modal
+    if (!validate()) return;
+
+    const formData = new FormData();
+    formData.append("fullName", fullName);
+    formData.append("email", email);
+    formData.append("country", country);
+    formData.append("phone", phone);
+    if (resume) formData.append("resume", resume);
+
+    try {
+      const res = await fetch(`${config.API_BASE_URL}/submitApplyForm.php`, {
+        method: "POST",
+        body: formData,
+      });
+
+      const raw = await res.text(); // <-- debug raw response
+      console.log("RAW RESPONSE:", raw);
+
+      const data = JSON.parse(raw);
+
+      if (data.success === true) {
+        alert("Application Submitted Successfully ✔️\nWe will contact you soon!");
+        onSuccess();
+      } else {
+        alert("Failed to submit! Server error: " + data.message);
+      }
+    } catch (err) {
+      console.error("ERROR PARSING JSON:", err);
+      alert("Backend returned invalid data. Check console for details.");
     }
   };
 
@@ -76,7 +88,7 @@ const ApplyForm: React.FC<ApplyFormProps> = ({ onSuccess }) => {
           type="text"
           value={fullName}
           onChange={(e) => /^[A-Za-z ]*$/.test(e.target.value) && setFullName(e.target.value)}
-          className="w-full border rounded-xl px-4 py-3 focus:border-[#233AA7]"
+          className="w-full border rounded-xl px-4 py-3"
         />
         {errors.fullName && <p className="text-red-500 text-xs">{errors.fullName}</p>}
       </div>
@@ -88,44 +100,42 @@ const ApplyForm: React.FC<ApplyFormProps> = ({ onSuccess }) => {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full border rounded-xl px-4 py-3 focus:border-blue-600"
+          className="w-full border rounded-xl px-4 py-3"
         />
         {errors.email && <p className="text-red-500 text-xs">{errors.email}</p>}
       </div>
 
-      {/* COUNTRY + PHONE */}
       {/* PHONE */}
-<div>
-  <label className="block text-sm font-medium mb-1">Phone</label>
+      <div>
+        <label className="block text-sm font-medium mb-1">Phone</label>
 
-  <div className="flex gap-2 flex-wrap md:flex-nowrap">
+        <div className="flex gap-2 flex-wrap md:flex-nowrap">
 
-    {/* Country Dropdown */}
-    <select
-      value={country}
-      onChange={(e) => setCountry(e.target.value)}
-      className="border rounded-xl px-2 py-3 bg-white w-full md:w-18 min-w-0"
-    >
-      {countryCodes.map((c) => (
-        <option key={c.code} value={c.code}>
-          {c.name} ({c.code})
-        </option>
-      ))}
-    </select>
+          {/* Country Code */}
+          <select
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
+            className="border rounded-xl px-2 py-3 bg-white w-full md:w-32"
+          >
+            {countryCodes.map((c, index) => (
+              <option key={index} value={c.code}>
+                {c.name} ({c.code})
+              </option>
+            ))}
+          </select>
 
-    {/* Phone Input */}
-    <input
-      type="text"
-      value={phone}
-      onChange={(e) => /^\d*$/.test(e.target.value) && setPhone(e.target.value)}
-      placeholder="9876543210"
-      className="border rounded-xl px-4 py-3 flex-1 w-full min-w-0"
-    />
-  </div>
+          {/* Phone Input */}
+          <input
+            type="text"
+            value={phone}
+            onChange={(e) => /^\d*$/.test(e.target.value) && setPhone(e.target.value)}
+            placeholder="9876543210"
+            className="border rounded-xl px-4 py-3 flex-1"
+          />
+        </div>
 
-  {errors.phone && <p className="text-red-500 text-xs">{errors.phone}</p>}
-</div>
-
+        {errors.phone && <p className="text-red-500 text-xs">{errors.phone}</p>}
+      </div>
 
       {/* RESUME */}
       <div>

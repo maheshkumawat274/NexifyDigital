@@ -14,7 +14,7 @@ import VideoEditingPage from "./pages/services/video editing";
 import BlogDetailsPage from "./pages/blogs/BlogDetailsPage";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import BlogsPage from "./pages/blogs/BlogPages";
+import BlogMainPage from "./pages/blogs";
 // import Websiteicons from "./components/Websiteicons";
 
 function App() {
@@ -36,8 +36,10 @@ function App() {
         <Route path="/about-us" element={<AboutPage />} />
         <Route path="/career" element={<CareerPage/>}/>
         <Route path="/contact-us" element={<ContactPage />} />
-        <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/blogs/:id" element={<BlogDetailsPage />} />
+        {/* <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/blogs/:id" element={<BlogDetailsPage />} /> */}
+        <Route path="/blogs" element={<BlogMainPage />} />
+        <Route path="/blogs/:slug" element={<BlogDetailsPage />} />
       </Routes>
       {/* <div className="fixed bottom-60 right-0 z-50">
         <Websiteicons/>

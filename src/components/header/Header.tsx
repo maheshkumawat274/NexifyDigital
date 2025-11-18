@@ -156,6 +156,7 @@ const Header: React.FC = () => {
               )}
               
               </li>
+            <li><Link className="hover:border-b-2 border-black" to="/blogs">Blogs</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/career">Career</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/contact-us">Contact Us</Link></li>
           </ul>
@@ -259,7 +260,13 @@ const Header: React.FC = () => {
               </ul>
             )}
           </div>
-    
+          
+          <Link to="/blogs" onClick={() => setIsMenuOpen(false)}>
+            <div className="flex justify-between items-center gap-6">
+              <p>Blogs</p>
+              <FiArrowRight />
+            </div>
+          </Link>
           <Link to="/career" onClick={() => setIsMenuOpen(false)}>
             <div className="flex justify-between items-center gap-6">
               <p>Career</p>
