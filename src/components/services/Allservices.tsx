@@ -51,9 +51,9 @@ const IndustrySolutions = () => {
   {/* RIGHT IMAGE */}
   <div className="flex justify-center">
     <img
-      src="/imgs/industry-web-solutions-india.webp"
+      src="/imgs/industry-web-solutions-nexify-digital-india.png"
       alt="Industry-focused web development and digital solutions by Nexify Digital"
-      className="rounded-2xl shadow-lg w-full object-cover md:h-[350px] lg:h-[380px]"
+      className="rounded-md md:rounded-xl shadow-lg w-full object-cover object-bottom md:h-[350px] lg:h-[380px]"
     />
   </div>
 

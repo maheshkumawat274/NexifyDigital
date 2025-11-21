@@ -486,7 +486,7 @@ class App {
         text: 'Collaborative'
       },
       {
-        image: `/imgs/lifestyle-nexify-digital.png`,
+        image: `/imgs/nexify-digital-team-india.jpg`,
         text: 'Teamwork'
       },
       {

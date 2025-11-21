@@ -8,13 +8,13 @@ const SoftwareSection1 = () => {
         Custom Software Development <br /> Solutions Tailored for Your Business
       </h1>
 
-      <section className="flex flex-col lg:flex-row items-center justify-center px-2 md:px-20 py-16">
+      <section className="flex flex-col lg:flex-row items-center justify-center px-2 md:px-20 py-16 ">
         {/* Left Side Image */}
-        <div className="relative w-full lg:w-1/2 flex justify-center">
+        <div className="relative w-full  flex justify-center ">
           <img
             src="/imgs/nexify-digital-team-india.jpg"
             alt="Nexify Digital software development team in India"
-            className="rounded-lg shadow-lg w-full max-w-md"
+            className="rounded-lg shadow-lg w-full max-w-md object-cover object-center h-[65vh] sm:h-[90vh] md:h-[78vh]"
           />
           <div className="absolute top-1/2 right-[60px] transform -translate-y-1/2 about-circle">
             <img
@@ -26,7 +26,7 @@ const SoftwareSection1 = () => {
         </div>
 
         {/* Right Side Content */}
-        <div className="w-full lg:w-1/2 mt-10 md:mt-0 md:pl-10 px-2 sm:px-14 md:px-6">
+        <div className="w-full  mt-10 md:mt-0 md:pl-10 px-2 sm:px-14 md:px-6">
           <h1 className="text-4xl font-bold mt-2">
             Build Reliable, Scalable & Smart Software Solutions
           </h1>

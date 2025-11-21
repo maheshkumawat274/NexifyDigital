@@ -5,6 +5,7 @@ import OurValues from '../../components/about/OurValues'
 import CommunitySection from '../../components/home/CommunitySection'
 import JourneySection from '../../components/about/AboutUs'
 import { Helmet } from 'react-helmet'
+import LifeAtNexify from '../../components/career/LifeAtNexify'
 
 const AboutPage = () => {
   return (
@@ -31,6 +32,7 @@ const AboutPage = () => {
      <JourneySection/>
      <MissionVisionSection/>
      <OurValues/>
+     <LifeAtNexify/>
      <div className='pb-0 md:pb-36'>
       <CommunitySection/>
      </div>

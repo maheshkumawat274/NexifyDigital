@@ -13,7 +13,7 @@ const AboutWebsite = () => {
           src="/imgs/nexify-digital-team-india.jpg"
           alt="Nexify Digital web development team working in India"
 
-          className="rounded-lg shadow-lg w-full max-w-md"
+          className="rounded-lg shadow-lg w-full max-w-md object-cover object-center h-[65vh] sm:h-[90vh] md:h-[78vh]"
         />
         
         <div className="absolute top-1/2 right-[60px] transform -translate-y-1/2 about-circle">

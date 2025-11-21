@@ -90,13 +90,13 @@ const HomeBlogSection: React.FC = () => {
                 className="h-52 w-full object-cover"
               />
 
-              <div className="p-5">
+              <div className="p-3">
                 <h3 className="font-bold text-lg mb-2">{blog.title}</h3>
 
                 <div
-  className="text-gray-600 text-sm mb-3 line-clamp-3"
-  dangerouslySetInnerHTML={{ __html: blog.description }}
-></div>
+                 className="text-gray-600 text-sm mb-3 line-clamp-3"
+                 dangerouslySetInnerHTML={{ __html: blog.description }}
+                ></div>
 
                 <p className="text-[#273aa0] text-xs font-semibold mb-3">
                   {new Date(blog.created_at).toLocaleDateString()}
