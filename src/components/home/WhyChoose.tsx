@@ -25,7 +25,7 @@ const WhyChoose = () => {
   }, [features.length]);
 
   return (
-    <section  id="why-choose-nexifydigital" className="py-0 sm:py-12 bg-white text-gray-700 px-4">
+    <section  id="why-choose-nexifydigital" className=" bg-white text-gray-700 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Title + Description (EXACT match) */}
         <h1 className="text-3xl md:text-4xl font-bold text-start sm:text-center mb-6">

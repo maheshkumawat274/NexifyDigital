@@ -11,7 +11,7 @@ const ProServicesSection = () => {
               Our Services
             </p>
           </div>
-          <h3 className="text-[#1A3E72] font-bold text-xl sm:text-3xl">Our Professional Web & App Development Services</h3>
+          <h3 className="text-gray-700 font-bold text-xl sm:text-3xl">Our Professional Web & App Development Services</h3>
           <p className="text-gray-600 text-md sm:text-lg">
             At Nexify Digital, a trusted website development company in Delhi NCR, we offer a complete range of IT and digital services. From creating modern websites as a leading web design company in Delhi to building high-performance apps as a mobile app development company in Delhi, we deliver solutions that support real business growth. We also provide ecommerce website development in Delhi to help brands build a strong online presence with user-focused, innovative technology.
 
@@ -22,7 +22,7 @@ const ProServicesSection = () => {
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp with Nexify Digital — Web & App Development Services"
             title="Contact Nexify Digital on WhatsApp"
-            className="px-6 py-2 bg-[#1A3E72] text-white cursor-pointer rounded-sm transform hover:-translate-y-0.5 transition inline-block"
+            className="px-6 py-2 bg-[#233AA7] text-white cursor-pointer rounded-sm transform hover:-translate-y-0.5 transition inline-block"
           >
             Let's Talk
           </a>

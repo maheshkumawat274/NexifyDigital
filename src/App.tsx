@@ -15,6 +15,7 @@ import BlogDetailsPage from "./pages/blogs/BlogDetailsPage";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import BlogMainPage from "./pages/blogs";
+import PricingPage from "./pages/pricing";
 // import Websiteicons from "./components/Websiteicons";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         </Route>
         <Route path="/about-us" element={<AboutPage />} />
         <Route path="/career" element={<CareerPage/>}/>
+        <Route path="/pricing" element={<PricingPage/>}/>
         <Route path="/contact-us" element={<ContactPage />} />
         {/* <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/blogs/:id" element={<BlogDetailsPage />} /> */}

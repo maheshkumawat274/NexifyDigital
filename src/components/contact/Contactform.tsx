@@ -58,7 +58,7 @@ const Contactform: React.FC = () => {
 
   return (
     
-    <section className='min-h-screen pt-6 pb-6 sm:pt-32'>
+    <section className='min-h-screen pt-6 pb-6 sm:pt-32' id="ContactForm">
       <h1 className="text-[50px] sm:text-[70px] mx-[20px] sm:[100px] lg:mx-[270px] font-bold leading-none text-gray-700">CONTACT</h1>
       <div className="  text-gray-700 flex flex-col px-4 justify-center items-center">
         
@@ -141,7 +141,7 @@ const Contactform: React.FC = () => {
                 <textarea
               id="description"
               name="message"
-              placeholder="Enter Your Query"
+              placeholder="Please tell us about your project..."
               value={formData.message}
               onChange={handleChange}
               className="bg-[#3647AD] text-white border-2 border-transparent hover:border-[#3647AD] rounded-md px-4 py-3 outline-none resize-none"

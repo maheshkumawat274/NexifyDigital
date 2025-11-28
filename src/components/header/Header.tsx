@@ -18,7 +18,7 @@ import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import AnimatedBtn from "../btns/AnimatedBtn";
 import { FaChevronDown } from "react-icons/fa6";
-
+import "./header.css";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -77,22 +77,12 @@ const Header: React.FC = () => {
           isScrolled ? "fixed top-0 w-full z-20" : ""
         }`}
       >
-        {/* <div className="flex items-center gap-3">
-          <Link to="/" className="flex items-center gap-2" aria-label="Nexify Digital Home">
-            <img
-              src="/imgs/logo11.png"
-              alt="Nexify Digital Logo"
-              className="w-20 h-20 object-contain bg-amber-300"
-            />
-          </Link>
-        </div> */}
-        <div className="flex justify-center items-center gap-3 h-14 mt-2 w-48">
+        <div className="mx-[-25px] sm:mx-0 flex justify-center items-center gap-3 h-14 mt-2 w-48">
           <Link to="/" className="flex items-center gap-2" aria-label="Nexify Digital Home">
             <img 
               src="/imgs/logo.png"
               alt="Nexify Digital Logo"
             />
-            <div></div>
           </Link>
         </div>
 
@@ -113,8 +103,8 @@ const Header: React.FC = () => {
                 </span>
               </Link>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 bg-white text-black shadow-xl z-50 border-t-4 border-[#233AA7] animate-slideDown w-[800px] max-w-[95vw] px-6 py-6">
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                <div className="services-dropdown  bg-white text-black shadow-xl z-50 border-t-4 border-[#233AA7] animate-slideDown px-6 py-6">
+                  <div className="services-dropdownGarid gap-6">
                     {[
                       {
                         title: "Website Development",
@@ -157,7 +147,7 @@ const Header: React.FC = () => {
               
               </li>
             <li><Link className="hover:border-b-2 border-black" to="/blogs">Blogs</Link></li>
-            <li><Link className="hover:border-b-2 border-black" to="/career">Career</Link></li>
+            <li><Link className="hover:border-b-2 border-black" to="/pricing">Pricing</Link></li>
             <li><Link className="hover:border-b-2 border-black" to="/contact-us">Contact Us</Link></li>
           </ul>
         </nav>
@@ -267,9 +257,9 @@ const Header: React.FC = () => {
               <FiArrowRight />
             </div>
           </Link>
-          <Link to="/career" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/pricing" onClick={() => setIsMenuOpen(false)}>
             <div className="flex justify-between items-center gap-6">
-              <p>Career</p>
+              <p>Pricing</p>
               <FiArrowRight />
             </div>
           </Link>

@@ -44,6 +44,9 @@ const Footer: React.FC = () => {
               <Link to="/career" aria-label="Explore career opportunities at Nexify Digital" className="hover:underline">Career</Link>
             </li>
             <li>
+              <Link to="/pricing" aria-label="Explore pricing for all services at Nexify Digital" className="hover:underline">Pricing</Link>
+            </li>
+            <li>
               <Link to="/blogs" aria-label="Read the latest blogs and insights from Nexify Digital" className="hover:underline">blogs</Link>
             </li>
             <li>
@@ -69,7 +72,7 @@ const Footer: React.FC = () => {
         <div className="md:w-1/4">
           <h1 className="font-bold mb-3 text-2xl sm:text-3xl">Contact</h1>
           <div className="text-md space-y-2">
-            <div>Delhi, 110020</div>
+            <div>Aggarwal City Square, 111, Mangalam Place, Sector 3, Rohini, New Delhi, Delhi 110085</div>
             <div>
               <a href="tel:+916376228917" className="hover:underline">+91 6376228917</a>
 

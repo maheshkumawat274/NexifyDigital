@@ -37,7 +37,7 @@ const HomeBlogSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="blog-updates" className="bg-gray-50 py-16 px-4 md:px-16">
+    <section id="blog-updates" className="py-10 px-4 md:px-16">
       {/* TOP SECTION */}
       <div className="w-full mx-auto grid md:grid-cols-2 gap-8 items-center">
 
@@ -54,18 +54,18 @@ const HomeBlogSection: React.FC = () => {
         <div className="flex flex-col justify-center">
           <h3 className="text-[#273aa0] font-semibold mb-2">Industry Insights</h3>
 
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-4">
+          <h2 className="text-3xl md:text-4xl text-gray-700 font-bold leading-snug mb-4">
             Explore Our Latest Tech Blogs & Digital Innovations
           </h2>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-700 mb-6 text-md md:text-lg">
             Stay updated with the latest technology updates, development trends,
             and digital growth strategies through our expert-written blogs.
           </p>
 
           <Link
             to="/blogs"
-            className="inline-block bg-[#273aa0] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#1b2fa1] transition self-start"
+            className="inline-block bg-[#273aa0] text-white px-6 py-2 rounded-full font-semibold hover:underline transition self-start"
           >
             View All Blogs →
           </Link>
@@ -91,10 +91,10 @@ const HomeBlogSection: React.FC = () => {
               />
 
               <div className="p-3">
-                <h3 className="font-bold text-lg mb-2">{blog.title}</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-700">{blog.title}</h3>
 
                 <div
-                 className="text-gray-600 text-sm mb-3 line-clamp-3"
+                 className="text-gray-700 text-sm mb-3 line-clamp-3"
                  dangerouslySetInnerHTML={{ __html: blog.description }}
                 ></div>
 

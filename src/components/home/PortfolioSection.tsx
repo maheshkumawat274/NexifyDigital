@@ -2,7 +2,7 @@ import React from "react";
 
 const PortfolioSection: React.FC = () => {
   return (
-    <section id="portfolio" className="bg-gray-50 pb-10 sm:pb-16 px-4 md:px-16">
+    <section id="portfolio" className=" pb-10 sm:pb-16 px-4 md:px-16">
       <div className="pb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
             Our Web Design & Development Portfolio
@@ -26,7 +26,7 @@ const PortfolioSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
            Innovative Digital Solutions
           </h2>
-          <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+          <p className="text-gray-600 mb-6 text-md sm:text-lg leading-relaxed">
             At <span className="font-semibold text-[#233BA7]">NexifyDigital</span>, 
             we craft eco-friendly, business-focused, and innovative digital solutions. 
             From sleek corporate websites to creative portfolios and user-friendly platforms, our projects 

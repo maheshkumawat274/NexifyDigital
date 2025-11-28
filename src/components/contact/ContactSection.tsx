@@ -4,7 +4,7 @@ const ContactSection = () => {
     <section id="contact-section" aria-label="Contact Nexify Digital section"
  className="relative flex flex-col sm:flex-row items-center px-2 sm:px-8 justify-between bg-white overflow-hidden">
       {/* Left Side Text */}
-      <div className="p-8 md:p-16 lg:p-24 z-10">
+      <div className="p-4 md:p-16 lg:p-24 z-10">
         <div className="relative">
           {/* Gradient Circle */}
           <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-tr from-pink-400 to-yellow-300 rounded-full opacity-70 -z-10" />

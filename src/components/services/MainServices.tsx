@@ -29,7 +29,7 @@ const services = [
     link: '/services/software_development',
     aria: "Custom Software Development Services",
     titleAttr: "Software Development | Nexify Digital",
-    bg: "/imgs/nexify-digital-team-india.jpg"
+    bg: "/imgs/nexify-digital-Software-development.png"
   },
   {
     title: "Digital Marketing",
@@ -69,25 +69,26 @@ const MainServices: React.FC = () => {
                 key={index}
                 title={service.titleAttr}
                 aria-label={service.aria}
-                className="relative border rounded-xl p-6 shadow hover:shadow-xl transition-all text-center cursor-pointer block overflow-hidden"
+                className="relative border rounded-xl p-6 shadow hover:shadow-xl transition-all 
+                           cursor-pointer overflow-hidden h-72 flex flex-col justify-center items-center group"
               >
-               {/* Background Image */}
-               <div
-                 className="absolute inset-0 bg-cover bg-center"
-                 style={{ backgroundImage: `url(${service.bg})` }}
-               ></div>
-               
-               {/* Black Overlay */}
-               <div className="absolute inset-0 bg-black opacity-40"></div>
-               
-
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-110"
+                  style={{ backgroundImage: `url(${service.bg})` }}
+                ></div>
+              
+                {/* Black Overlay */}
+                <div className="absolute inset-0 bg-black opacity-60 hover:opacity-70"></div>
+              
                 {/* Content */}
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col items-center text-center">
                   <div className="flex justify-center mb-4">{service.icon}</div>
                   <h3 className="text-xl text-white font-bold mb-2">{service.title}</h3>
                   <p className="text-white text-sm">{service.description}</p>
                 </div>
               </Link>
+              
             ))}
           </div>
 
@@ -96,17 +97,17 @@ const MainServices: React.FC = () => {
             to={services[2].link}
             title={services[2].titleAttr}
             aria-label={services[2].aria}
-            className="relative h-full border rounded-xl p-10 shadow hover:shadow-xl transition-all text-center flex flex-col justify-center cursor-pointer block overflow-hidden"
+            className="relative h-96 sm:h-[80vh] md:h-full border rounded-xl p-10 shadow hover:shadow-xl transition-all text-center flex flex-col justify-center cursor-pointer block overflow-hidden group"
           >
             
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center"
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-110"
               style={{ backgroundImage: `url(${services[2].bg})` }}
             ></div>
             
             {/* Black Overlay */}
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+            <div className="absolute inset-0 bg-black opacity-60 hover:opacity-70"></div>
             
 
             {/* Content */}
@@ -118,36 +119,35 @@ const MainServices: React.FC = () => {
           </Link>
 
           {/* RIGHT 2 CARDS */}
-          <div className="flex flex-col gap-6">
-            {services.slice(3, 5).map((service, index) => (
-              <Link
-                to={service.link}
-                key={index}
-                title={service.titleAttr}
-                aria-label={service.aria}
-                className="relative border rounded-xl p-6 shadow hover:shadow-xl transition-all text-center cursor-pointer block overflow-hidden"
-              >
-               
-                {/* Background Image */}
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${service.bg})` }}
-            ></div>
-            
-            {/* Black Overlay */}
-            <div className="absolute inset-0 bg-black opacity-40"></div>
-            
+         <div className="flex flex-col gap-6">
+  {services.slice(3, 5).map((service, index) => (
+    <Link
+      to={service.link}
+      key={index}
+      title={service.titleAttr}
+      aria-label={service.aria}
+      className="relative border rounded-xl p-6 shadow hover:shadow-xl transition-all 
+                 cursor-pointer overflow-hidden h-72 flex flex-col justify-center items-center group"
+    >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-110"
+        style={{ backgroundImage: `url(${service.bg})` }}
+      ></div>
 
+      {/* Black Overlay */}
+      <div className="absolute inset-0 bg-black opacity-60 hover:opacity-70"></div>
 
-                {/* Content */}
-                <div className="relative z-10">
-                  <div className="flex justify-center mb-4">{service.icon}</div>
-                  <h3 className="text-xl text-white font-bold mb-2">{service.title}</h3>
-                  <p className="text-white text-sm">{service.description}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center text-center">
+        <div className="flex justify-center mb-4">{service.icon}</div>
+        <h3 className="text-xl text-white font-bold mb-2">{service.title}</h3>
+        <p className="text-white text-sm">{service.description}</p>
+      </div>
+    </Link>
+  ))}
+</div>
+
 
         </div>
       </div>

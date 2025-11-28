@@ -39,7 +39,7 @@ const IndustrySolutions = () => {
 
   {/* LEFT CONTENT */}
   <div>
-    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+    <h1 className="text-3xl md:text-4xl font-bold text-gray-700 mb-3">
       Custom Web Solutions for Every Industry | Nexify Digital – A web development company in India
     </h1>
 

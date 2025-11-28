@@ -3,7 +3,6 @@ import Contactform from '../../components/contact/Contactform'
 import CommunitySection from '../../components/home/CommunitySection'
 import ProcessSection from '../../components/home/Process'
 import ServicesHome from '../../components/home/ServicesHome'
-import TopSection1 from '../../components/home/TopSection1'
 import WelcomePage from '../../components/home/Welcomepage'
 import WhyChoose from '../../components/home/WhyChoose'
 // import PortfolioSection from '../../components/home/WorkPortfolio'
@@ -12,6 +11,7 @@ import MainServices from '../../components/services/MainServices'
 import PortfolioSection from '../../components/home/PortfolioSection'
 import IndustrySolutions from '../../components/services/Allservices'
 import HomeBlogSection from '../../components/blogs/HomeBlogSection'
+import TopSection from '../../components/home/TopSection'
 const HomePage = () => {
   return (
     <>
@@ -31,7 +31,7 @@ const HomePage = () => {
         <link rel="canonical" href="https://nexifydigital.in" />
       </Helmet>
       
-      <TopSection1/>
+      <TopSection/>
       <WelcomePage/>
       <MainServices/>
       <ServicesHome/>

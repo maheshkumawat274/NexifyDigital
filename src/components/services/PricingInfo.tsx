@@ -9,7 +9,7 @@ const PricingInfo: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-2">Transparent & Flexible Pricing for Your Digital Needs
 </h2>
         <div className="w-24 h-1 bg-[#3647AD] mx-auto mb-4"></div>
-        <p className="text-lg text-gray-600">
+        <p className="text-md sm:text-lg text-gray-600">
           At NexifyDigital, we believe every project is unique. Instead of fixed prices,
           we offer customized pricing based on your project requirements, features, and timelines.
 

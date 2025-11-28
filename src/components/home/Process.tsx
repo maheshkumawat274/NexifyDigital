@@ -1,91 +1,91 @@
+import type { FC } from "react";
 
-import { motion } from 'framer-motion';
+const steps = [
+  {
+    number: "01",
+    title: "Research",
+    description:
+      "We analyze your business needs, target audience, and market competition to create a strong project foundation.",
+    icon: "📋", // Replace with your own SVG icon
+  },
+  {
+    number: "02",
+    title: "Ideation",
+    description:
+      "We brainstorm creative and effective solutions that align with your goals and vision.",
+    icon: "🧠",
+  },
+  {
+    number: "03",
+    title: "Design",
+    description:
+      "We convert ideas into clean, modern, and user-friendly UI/UX designs and wireframes.",
+    icon: "🎨",
+  },
+  {
+    number: "04",
+    title: "Development",
+    description:
+      "We develop fast, secure, and fully responsive websites or applications using modern technologies.",
+    icon: "⚙️",
+  },
+  {
+    number: "05",
+    title: "Testing",
+    description:
+      "We test every feature to ensure smooth performance, speed, and error-free functionality.",
+    icon: "🔍",
+  },
+  {
+    number: "06",
+    title: "Launch",
+    description:
+      "We deploy your project with complete optimization and provide support to ensure successful results.",
+    icon: "🚀",
+  },
+];
 
-const ProcessSection = () => {
-  const processSteps = [
-    {
-      id: 1,
-      title: "Discovery Call",
-      description: "We discuss your project requirements, goals, and challenges in a free consultation.",
-      icon: "📞",
-      color: "bg-blue-100"
-    },
-    {
-      id: 2,
-      title: "Requirement Analysis",
-      description: "Our team analyzes your needs and prepares a detailed project specification.",
-      icon: "🔍",
-      color: "bg-purple-100"
-    },
-    {
-      id: 3,
-      title: "Proposal & Planning",
-      description: "We present a customized solution with timeline, milestones, and pricing.",
-      icon: "📑",
-      color: "bg-green-100"
-    },
-    {
-      id: 4,
-      title: "Development Phase",
-      description: "Our experts build your solution with agile methodology and regular updates.",
-      icon: "💻",
-      color: "bg-yellow-100"
-    },
-    {
-      id: 5,
-      title: "Testing & QA",
-      description: "Rigorous testing ensures your solution meets quality standards.",
-      icon: "🧪",
-      color: "bg-red-100"
-    },
-    {
-      id: 6,
-      title: "Deployment & Support",
-      description: "We launch your solution and provide ongoing maintenance support.",
-      icon: "🚀",
-      color: "bg-indigo-100"
-    }
-  ];
-
+const ProcessSection: FC = () => {
   return (
-    <section id="web-development-process"  className="py-16 px-2 md:px-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-700 mb-4">
-            Our <span className="text-[#273aa0]">Process</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From concept to delivery — our web development process ensures reliable results for businesses across India.
+    <section className="w-full pb-16 px-4 md:px-16 bg-white">
+      {/* TOP HEADING */}
+      <h2 className="text-center text-3xl md:text-4xl text-gray-700 font-bold mb-16">
+        6 Steps of Development Process
+      </h2>
 
-          </p>
-        </div>
+      <div className="relative w-full mx-auto">
 
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="hidden md:block absolute left-1/2 h-full w-1 bg-blue-200 transform -translate-x-1/2"></div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={step.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                aria-label={`${step.title} — part of Nexify Digital's web development process`}
-                className={`relative ${index % 2 === 0 ? 'md:mt-0' : 'md:mt-20'} ${index >= 3 ? 'lg:mt-20' : ''}`}
-              >
-                <div className={`p-6 rounded-xl shadow-md ${step.color} relative z-10 h-full`}>
-                  <div className="text-4xl mb-4">{step.icon}</div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
-                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-white border-4 border-[#273aa0] flex items-center justify-center">
-                    <span className="text-[#273aa0] font-bold">{step.id}</span>
-                  </div>
+        {/* TIMELINE BAR */}
+        <div className="absolute top-[80px] left-0 w-full h-4 bg-gray-300 rounded-md z-0"></div>
+
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-10 relative z-10">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center space-y-3"
+            >
+              {/* NUMBER */}
+              <span className="text-3xl font-bold text-gray-700">{step.number}</span>
+
+              {/* HEXAGON ICON */}
+              <div className="relative w-28 h-28 flex items-center justify-center">
+                {/* Blue Hexagon */}
+                <div className="absolute w-28 h-28 bg-[#233AA7] clip-hex"></div>
+
+                {/* Inner White Hexagon */}
+                <div className="absolute w-20 h-20 bg-white clip-hex shadow-md flex items-center justify-center text-3xl">
+                  {step.icon}
                 </div>
-              </motion.div>
-            ))}
-          </div>
+              </div>
+
+              {/* TITLE */}
+              <h3 className="font-semibold">{step.title}</h3>
+
+              {/* DESCRIPTION */}
+              <p className="text-sm text-gray-600 px-2">{step.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
