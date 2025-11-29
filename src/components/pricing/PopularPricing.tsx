@@ -1,4 +1,6 @@
 // PopularSolutions.tsx
+import React from "react";
+
 import  { useState } from "react";
 import { FiCheck } from "react-icons/fi";
 import { motion } from "framer-motion";
@@ -156,7 +158,7 @@ const listItem = {
 };
 
 /* ===== Component ===== */
-export default function PopularSolutions(): JSX.Element {
+export default function PopularSolutions(): React.JSX.Element {
   const [active, setActive] = useState<MainTabs>("doctor");
   const [doctorRole, setDoctorRole] = useState<DoctorTabs>("admin");
   const [hotelRole, setHotelRole] = useState<HotelTabs>("admin");
