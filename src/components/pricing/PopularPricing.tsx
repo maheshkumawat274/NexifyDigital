@@ -203,9 +203,7 @@ export default function PopularSolutions(): JSX.Element {
             Nexify Digital Business Suites
           </h2>
           <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
-            Enterprise-ready systems for clinics, hotels and multi-vendor
-            marketplaces — role-based dashboards, reporting, automation and
-            integrations.
+            Popular enterprise systems for clinics, hotels and multi-vendor marketplaces — custom dashboards, reporting, automation and integrations.
           </p>
 
           

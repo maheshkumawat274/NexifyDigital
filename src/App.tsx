@@ -16,6 +16,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import BlogMainPage from "./pages/blogs";
 import PricingPage from "./pages/pricing";
+import ChatbotWidget from "./components/chatbot/ChatbotWidget";
 // import Websiteicons from "./components/Websiteicons";
 
 function App() {
@@ -46,7 +47,9 @@ function App() {
       {/* <div className="fixed bottom-60 right-0 z-50">
         <Websiteicons/>
       </div> */}
+      <ChatbotWidget/>
       <Footer/>
+
     </Router>
   );
 }
