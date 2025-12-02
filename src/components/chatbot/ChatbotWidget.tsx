@@ -30,7 +30,7 @@ export default function ChatbotWidget() {
       {showBubble && (
         <div className="fixed bottom-20 right-5 bg-white shadow-xl border rounded-lg p-3 w-64 z-50 animate-slide-up">
           <div className="flex justify-between items-start">
-            <p className="text-gray-800 text-sm">
+            <p className="text-gray-700 text-sm">
               Hi 👋 Need any help? Click here to chat!
             </p>
 
@@ -52,7 +52,7 @@ export default function ChatbotWidget() {
           closeBubble(); // bubble should hide if user opens chat
         }}
         aria-label={open ? "Close chat" : "Open chat"}
-        className="fixed bottom-5 right-5 bg-indigo-600 text-white p-3.5 rounded-full shadow-2xl hover:bg-indigo-700 transition-transform transform-gpu hover:-translate-y-0.5 cursor-pointer z-50"
+        className="fixed bottom-5 right-5 bg-[#233AA7] text-white p-3.5 rounded-full shadow-2xl hover:bg-indigo-700 transition-transform transform-gpu hover:-translate-y-0.5 cursor-pointer z-50"
       >
         <MessageCircle size={24} />
       </button>
