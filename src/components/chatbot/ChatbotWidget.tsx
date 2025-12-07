@@ -1,5 +1,5 @@
 // ChatbotWidget.tsx
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import NexifyChatbot from "./NexifyChatbot";
 import { MessageCircle, X } from "lucide-react";
 

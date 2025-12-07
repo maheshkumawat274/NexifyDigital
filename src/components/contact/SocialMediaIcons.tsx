@@ -43,7 +43,7 @@ const SocialMediaIcons = () => {
       <div className="social-button">
       
           <a
-        href="https://www.facebook.com/profile.php?id=61575985723004"
+        href="https://www.facebook.com/p/Nexify-Digital-61575985723004/"
         target="_blank"
         rel="noopener noreferrer">
           <button className="relative w-12 h-12 cursor-pointer rounded-full group">

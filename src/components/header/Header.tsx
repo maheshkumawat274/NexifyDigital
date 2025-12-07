@@ -55,7 +55,7 @@ const Header: React.FC = () => {
           </a>
         </div>
         <nav aria-label="Social Media Links" className="flex space-x-4 text-[#3647AD]">
-          <a href="https://www.facebook.com/profile.php?id=61575985723004" aria-label="Facebook"><FaFacebookF /></a>
+          <a href="https://www.facebook.com/p/Nexify-Digital-61575985723004/" aria-label="Facebook"><FaFacebookF /></a>
           <a href="https://www.instagram.com/nexifydigital.in/" aria-label="Instagram"><FaInstagram /></a>
           <a href="https://www.linkedin.com/company/nexifydigital-solutions/" aria-label="LinkedIn"><FaLinkedinIn /></a>
           <a href="https://www.youtube.com/@NexifyDigital-78" aria-label="YouTube"><FaYoutube /></a>
