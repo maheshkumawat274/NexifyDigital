@@ -37,7 +37,7 @@ const Header: React.FC = () => {
   return (
     <header>
       {/* --- Top Header --- */}
-      <div className="bg-[#EDEDE9] text-sm py-2 px-6 justify-between items-center hidden md:flex ">
+      <div className="bg-[#EDEDE9] text-sm py-2 px-4 md:px-16 justify-between items-center hidden md:flex ">
         <div className="flex space-x-4 text-[#3647AD]">
           <a
             href="tel:+916376228917"
@@ -73,15 +73,25 @@ const Header: React.FC = () => {
 
       {/* --- Main Header --- */}
       <div
-        className={`bg-white px-4 py-3 flex justify-between items-center shadow transition-all duration-300 ${
+        className={`bg-white px-4 md:px-15 py-3 flex justify-between items-center shadow transition-all duration-300 ${
           isScrolled ? "fixed top-0 w-full z-20" : ""
         }`}
       >
-        <div className="mx-[-25px] sm:mx-0 flex justify-center items-center gap-3 h-14 mt-2 w-48">
+        {/* <div className="mx-[-25px] sm:mx-0 flex justify-center items-center gap-3 h-14 mt-2 w-48">
           <Link to="/" className="flex items-center gap-2" aria-label="Nexify Digital Home">
             <img 
-              src="/imgs/logo.png"
+              src="/imgs/newlogo2026.png"
               alt="Nexify Digital Logo"
+            />
+          </Link>
+        </div> */}
+         {/* Logo */}
+          <div className="h-18 w-24 overflow-hidden flex items-center">
+          <Link to="/" className="block h-full w-full">
+            <img
+             src="/imgs/newlogo2026.png"
+              alt="Nexify Digital Logo"
+              className="h-full w-full object-contain scale-185"
             />
           </Link>
         </div>

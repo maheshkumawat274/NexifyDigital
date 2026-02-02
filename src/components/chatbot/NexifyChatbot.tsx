@@ -1,5 +1,5 @@
 // NexifyChatbot.tsx
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { X, Trash2 } from "lucide-react";
 
 // ---------------------------
@@ -339,7 +339,7 @@ export default function NexifyChatbot({ onClose }: { onClose?: () => void }) {
       <div className="flex items-center justify-between px-4 py-3 bg-[#233AA7] text-white">
         
         <div className="flex items-center gap-3">
-          <img src="/imgs/img.png" className="w-10 h-10 bg-white rounded-full object-cover" />
+          <img src="/imgs/new update.png" className="w-10 h-10 bg-white rounded-full object-cover" />
           <div>
             <div className="font-semibold">NexifyDigital Chat</div>
             <div className="text-xs opacity-80">Quick • Friendly • Smart</div>
@@ -383,7 +383,7 @@ export default function NexifyChatbot({ onClose }: { onClose?: () => void }) {
         {isTyping && (
           <div className="flex items-center gap-2">
             <div className="w-9 h-9 text-white flex items-center justify-center rounded-full text-sm font-bold">
-              <img src="/imgs/img.png" className="w-10 h-10 rounded-full"/>
+              <img src="/imgs/new update.png" className="w-10 h-10 rounded-full"/>
             </div>
             <div className="px-4 py-2 bg-white border rounded-lg">
               Typing...
